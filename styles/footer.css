@@ -1,0 +1,67 @@
+.footer{
+  padding-inline: 1rem;
+  background-color: var(--four-color);
+  
+}
+
+.foot-Container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid rgba(255, 255, 255, 0.518);
+  padding: 2.5rem 1rem;
+  
+}
+
+.foot-Container div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+.foot-Container a{
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  
+}
+ .foot-Container a::before{
+  content: 'instagram';
+  font-size: .8rem;
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  top: -25px;
+  left: -20px;
+  transform: translate3d(0,25px,0);
+  opacity: 0;
+  transition: .5s;
+ }
+
+ .foot-Container a:nth-child(1)::before{
+  content: 'GitHub';
+  left:-10px ;
+ }
+
+ .foot-Container a:nth-child(2)::before{
+  content: 'Linkedin';
+  left: -16px;
+ }
+
+ .foot-Container a:nth-child(3)::before{
+  content: 'Instagram';
+ }
+
+ .foot-Container a:hover::before{
+  transform: initial;
+  opacity: initial;
+ }
+
+
+
+
+

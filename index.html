@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Assets/avatar.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Portfólio</title>
+    <!--PARA GERENCIAR O JAVASCRIPT NA PAGINA-->
+    <script>
+      document.documentElement.className ='js'
+    </script>
+  </head>
+  <body>
+    <nav id="navBar">
+      <div id="navContainer">
+        <span class="card-logo">
+          <span class="logo"></span>
+          <p>Jefferson Guirra</p>
+        </span>
+
+        <ul class="menu">
+          <li>
+            <a href="#sobre">Quem sou</a>
+          </li>
+          <li>
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li id="skill">
+            <a href="#conhecimentos">Conhecimentos</a>
+          </li>
+        </ul>
+        <button class="btn-menu">
+          <span class="hamburguer">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <section id="presetation">
+      <article>
+        <div id="grid1"></div>
+        <div id="grid2"></div>
+      </article>
+    </section>
+
+    <div class="card-1">
+      <p>olá, eu sou</p>
+      <p id="name">Jefferson Guirra.</p>
+      <span>Profissional</span>
+      <div class="rotate-words">
+        <span style="--d: 0s">front end.</span>
+        <span style="--d: 6s">web developer.</span>
+      </div>
+    </div>
+
+    <div class="card-2">
+      <a
+        target="_blank"
+        href="https://br.freepik.com/fotos-vetores-gratis/avatar-homem"
+      >
+        <img
+          src="./Assets/avatar-1.png"
+          alt="avatar-homem"
+          title="avatar-homem"
+        />
+      </a>
+    </div>
+
+    <section class="sobre" id="sobre" data-anima>
+      <h1 class="title">Quem sou</h1>
+      <div class="container-sobre">
+        <a href='https://br.freepik.com/fotos-vetores-gratis/programacao'>
+          <span class="img-avatar">
+            <img src="./Assets/about-small.png" alt="avatar-developer" title="avatar-developer">
+          </span>
+        </a>
+
+      
+        <article class="conteudo-sobre">
+          
+          <p>Olá me chamo Jefferson Guirra, sou um ex-estudante de física de 23 anos que teve contato com programação ainda no curso, desde então mergulhei nesse meio de cabeça, errando e aprendendo a cada dia busco evoluir como desenvolvedor. No momento me dedico a ser um desenvolvedor Front End mas futuramente quero me tornar Full Stack. Para me encontrar <a href="https://www.linkedin.com/in/jefferson-guirra-developer" target="_blank">LinkedIn</a>, para obter mais informações sobre os meus projetos<a href="https://github.com/Jefferson-Guirra" target="_blank"> Github.</a>
+          </p>
+        </article>
+      </div>
+      
+      <article>
+
+    </section>
+
+    <section class="projeto" id="projetos"  data-anima>
+      <h1 class="title">Projetos</h1>
+      <article class="projeto-container">
+          
+        
+          <div class="projeto-conteudo">
+            
+            <div class="caixa">
+              <span> <img src="./Assets/dog.svg" alt=""></span>
+              <h4 class="page">Dogs Rede</h4>
+              <p>Rede social para os apaixonados por pets.</p>
+              <p>Tecnologias Usadas: React, Redux, JavaScript, Html, Css, Api.</p>
+              <a href="https://dogs-rede-social-cachorro.netlify.app/" target="_blank">visualizar</a>
+            </div>
+          
+        </div>
+
+
+        <div class="projeto-conteudo">
+          <div class="caixa">
+            <span><img src="./Assets/movie.svg" alt=""></span>
+            <h4 class="page">Movies Net</h4>
+            <p>site criado para busca de filmes e afins.</p>
+            <p>Tecnologias Usadas: JavaScript, Html, Css, React, Redux, Api.</p>
+            <a href="https://movies-net.netlify.app" target="_blank">visualizar</a>
+          </div>
+        </div>
+
+        <div class="projeto-conteudo">
+          <div class="caixa">
+            <span><img src="./Assets/tasks.svg" alt=""></span>
+            <h4 class="page">Lista de Tarefas</h4>
+            <p>Feita para organizar o seu dia de forma simples e rápida.</p>
+            <p>Tecnologias Usadas: React, JavaScript, Html, Css, Styled-Components, TypeScript.</p>
+            <a href="https://projeto-06-lista-de-tarefas.netlify.app/" target="_blank">visualizar</a>
+          </div>
+        </div>
+
+        <div class="projeto-conteudo">
+          <div class="caixa">
+            <span><img src="./Assets/lion.svg" alt=""></span>
+            <h4 class="page">Animais Fantásticos</h4>
+            <p>Ong de proteção a animais.</p>
+            <p>Tecnologias Usadas: JavaScript, Html, Css.</p>
+            <a  href="https://jefferson-guirra.github.io/-Projetos/projeto-02" target="_blank" >visualizar</a>
+          </div>
+        </div>
+
+      <div class="projeto-conteudo">
+        <div class="caixa">
+          <span><img src="./Assets/doctor.svg" alt=""></span>
+          <h4 class="page">Doctor Care</h4>
+          <p>Clínica para marcação de exames, líder em atendimento e qualidade.</p>
+          <p>Tecnologias Usadas: Html, Css, JavaScript.</p>
+          <a href="https://doctor-care-clinica.netlify.app/" target="_blank">visualizar</a>
+        </div>
+      </div>
+
+      
+        <div class="projeto-conteudo">
+          <div class="caixa">
+            <span><img src="./Assets/trips.svg" alt=""></span>
+            <h4 class="page">Caravan Viagens</h4>
+            <p>A melhor empresa de viagens do Brasil você encontra aqui.</p>
+            <p>Tecnologias Usadas: JavaScript, Html, Css, Bootstrap.</p>
+            <a href="https://caravan-viagens-empresa.netlify.app/" target="_blank">visualizar</a>
+          </div>
+        </div>
+      
+
+
+        <p class="foot-projeto">
+          <a href="https://github.com/Jefferson-Guirra" target="_blank">Repositório do GitHub</a>
+        </p>
+
+      </article>
+
+      
+    </section>
+
+    <section class="conhecimentos" id="conhecimentos" data-anima>
+      <article class="skill-container">
+        <div class="skill-text">
+          <h2>Conhecimentos</h2>
+          <p>*passe o cursor do mouse sobre o card para ler*</p>
+          <p class="text-conhecimentos">
+            HTML é uma linguagem de marcação, usada para definir a estrutura do conteúdo que sera exibido na web.
+
+            CSS é uma linguagem de folha de estilo composta por "cascatas", criado com o propósito de estilizar as páginas HTML.
+        
+            JavaScript é uma linguagem de programação interpretada e estruturada, de script de alto nível com tipagem dinâmica fraca e multiparadigma, criada para dar reatividade as páginas.',
+            
+            Bootstrap é um framework desenvolvido para pontencializar o bom e velho Css.
+            ReactJS é uma biblioteca JavaScript de código aberto usada para a criação de interfaces de usuário em páginas web.
+            
+            Redux é uma biblioteca para armazenamento de estados de aplicações JavaScript.
+
+            TypeScript é um superSet da linguagem JavaScript de tipagem estática, quando usado potencializa a detecção de erros durante o desenvolvimento e habilita diferentes funcionalidades não nativas.
+
+            Styled Components é uma biblioteca que utiliza o conceito de Css-in-JS, ou seja, que nos permite escrever códigos CSS dentro do JavaScript'
+          </p>
+        </div>
+        <div class="skill-card">
+
+          <div class="conteudo-skill">
+            <span>
+            </span>
+          </div>
+          
+          
+          <div class="conteudo-skill">
+            <span></span>
+          </div>
+
+          <div class="conteudo-skill">
+            <span></span>
+          </div>
+
+          <div class="conteudo-skill">
+            <span></span>
+          </div>
+
+          <div class="conteudo-skill">
+            <span></span>
+          </div>
+          <div class="conteudo-skill">
+            <span></span>
+          </div>
+          <div class="conteudo-skill">
+            <span></span>
+          </div>
+          
+          <div class="conteudo-skill">
+            <span></span>
+          </div>
+          <div class="conteudo-skill">
+            <span></span>
+          </div>
+        </div>
+
+      </article>
+
+      
+
+    </section>
+
+
+    <footer class="footer">
+      
+      <div class="foot-Container">
+        <h3>Contato</h3>
+
+        <div>
+          <a href="https://github.com/Jefferson-Guirra" target="_blank"><img src="./Assets/github.svg"></a>
+          <a href="https://www.linkedin.com/in/jefferson-guirra-developer" target="_blank"> <img src="./Assets/lkd.svg"></a>
+          <a href="https://www.instagram.com/jefferson.guirra/" target="_blank"><img src="./Assets/insta.svg"></a>
+        </div>
+  
+      </div>
+      
+    </footer>
+
+    
+
+
+    <script type="module" src="/script/script.js"></script>
+  </body>
+</html>

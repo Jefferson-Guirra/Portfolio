@@ -1,0 +1,143 @@
+/*------------------------------------SOBRE-STYLE-GERAL------------------*/
+.sobre{
+  background-color: var(--four-color);
+  height: 80vh;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+}
+
+.container-sobre{
+  display: grid;
+  position: relative;
+  grid-template-columns: auto auto;
+  padding: 1rem;
+  gap: .6rem;
+  height: 100%;
+  overflow: hidden;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+}
+
+.js .container-sobre .img-avatar{
+  position: relative;
+  display: block;
+  width: 22rem;
+  overflow: hidden;
+  height: 100% ;
+  padding-inline: 1.2rem;
+  opacity: 0;
+  transition:  1s;
+
+}
+
+.container-sobre .img-avatar{
+  position: relative;
+  display: block;
+  width: 22rem;
+  overflow: hidden;
+  height: 100% ;
+  padding-inline: 1.2rem;
+  opacity: initial;
+  transition: 3s;
+}
+
+
+.js .sobre.active .container-sobre .img-avatar{
+  opacity: initial;
+}
+.js .sobre.active .container-sobre .img-avatar:hover{
+  transform:scale(1.2)
+}
+
+.js .container-sobre .img-avatar::before{
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  top: 4.8rem;
+  left: 15.4rem;
+  position: absolute;
+  animation: anima-Background 15s forwards infinite linear;
+}
+
+
+
+.sobre .title{
+  grid-column: 1/-1;
+  text-align: right;
+  margin-right: 4rem;
+}
+
+.js .sobre .title{
+  opacity: 0;
+  transform:  translate3d(100vh,0,0);
+  transition: 1s;
+}
+
+.js .sobre.active .title{
+  transform: initial;
+  opacity: initial;
+  visibility: visible;
+  
+}
+.js .container-sobre .conteudo-sobre p{
+  transform: translate3d(1200px,0,0);
+  opacity: 0;
+  transition: 2s;
+  transition-delay: .3s;
+}
+
+.js .sobre.active .conteudo-sobre p{
+  opacity: 0.8;
+  font-size: 1.3rem;
+  transform: initial;
+}
+.container-sobre .conteudo-sobre p a{
+  color: #2195f3ae;
+  transition: .5s;
+}
+
+.container-sobre .conteudo-sobre p a:hover{
+  color: black;
+}
+
+
+/*----------------------------RESPONSIVIDADE------------------------------*/
+@media (max-width:750px){
+  .sobre .title{
+    text-align: center;
+    width: 100%;
+  }
+  .sobre{
+    height: fit-content;
+  }
+  .container-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container-sobre  .img-avatar{
+    padding: 0;
+
+    width: 14rem;
+    height: 15rem;
+  }
+  .container-sobre .img-avatar::before{
+    width: 35px;
+    left: 10.35rem;
+    top: 3rem;
+  }
+
+  .conteudo-sobre p{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+

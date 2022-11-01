@@ -1,0 +1,146 @@
+/*-----------------APRESENTAÇÃO-STYLE-GERAL------------------*/
+#presetation {
+  overflow: hidden;
+}
+#presetation article {
+  background: #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+#grid1 {
+  background-color: var(--second-color);
+  border-right: 2px solid #eee;
+  transform: skew(25deg);
+  border-right: 2px solid var(--second-color);
+  position: relative;
+}
+
+#grid1::before {
+  content: '';
+  display: block;
+  width: 100rem;
+  height: 100vh;
+  background-color: var(--three-color);
+  position: absolute;
+  top: 50%;
+  left: -17rem;
+  z-index: -1;
+  background-color: var(--second-color);
+}
+
+#name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#grid2 {
+  background-color: var(--three-color);
+  transform: skew(25deg);
+}
+
+#grid2::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--three-color);
+  position: absolute;
+  top: 0rem;
+  left: 99%;
+  z-index: -1;
+}
+
+/*-----------------------CARD-APRESENTAÇÃO-------------------------*/
+
+.card-1 {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  position: absolute;
+  z-index: 200;
+  top: 30vh;
+  left: 12vw;
+  font-size: 2rem;
+  transform: translate3d(-80px, 0, 0);
+  animation: anima-Left 0.8s forwards;
+  width: 25rem;
+}
+
+.card-1 p {
+  opacity: initial;
+}
+
+.rotate-words span {
+  width: max-content;
+  position: absolute;
+  background-color: var(--three-color);
+  padding-inline: 0.7rem;
+  opacity: 0;
+  transform-origin: 10% 75%;
+  animation: rotate-Words 12s var(--d) linear infinite;
+}
+
+.card-2 {
+  display: block;
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 25vh;
+  left: 70vw;
+  border-radius: 50%;
+  animation: show-Avatar 8s infinite linear;
+}
+
+.rotate-words {
+  display: inline;
+  margin-left: 10px;
+  position: relative;
+}
+
+/*------------------------------RESPONSIVIDADE--------------------------*/
+@media (max-width: 1200px) {
+  .card-1 {
+    left: 10vh;
+  }
+}
+
+@media (max-width: 850px) {
+  .card-1 {
+    left: 5vw;
+    max-width: 17rem;
+  }
+  .card-2 {
+    left: 60vw;
+  }
+  .card-1 #name {
+    font-size: 2rem;
+  }
+  .rotate-words {
+    display: block;
+    top: 0.8rem;
+    left: -1rem;
+  }
+
+  .card-logo p {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .card-1 {
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+
+  .card-2 {
+    width: 10rem;
+    height: 10rem;
+    top: 32vh;
+    left: 50;
+    animation: show-AvatarMob 3s infinite linear;
+  }
+}

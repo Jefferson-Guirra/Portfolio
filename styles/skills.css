@@ -1,0 +1,261 @@
+/*CLASSE JS USADA PARA GERENCIAR JAVASCRIPT*-----------------------*/
+.conhecimentos{
+  height: fit-content;
+  width: 100%;
+  padding: 1rem;
+  background-color: #283033;
+}
+
+.js .conhecimentos{
+  height: 80vh;
+}
+
+.js .skill-text .text-conhecimentos{
+  display: none;
+}
+/*-----------------------CARD-STYLE----------------------------------------*/
+.skill-text{
+  height: 100%;
+  padding-top: 2rem;
+}
+
+.skill-text h2{
+  margin-bottom: 3rem;
+  transition: .8s;
+}
+.js .skill-text h2{
+  transform: translate3d(-100vh,0,0);
+  opacity: 0;
+}
+.js .conhecimentos.active h2{
+  opacity: initial;
+  transform: initial;
+}
+.skill-text h2::after{
+  content: '';
+  display: inline-block;
+  margin-left: .5rem;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+.skill-text p{
+  width: 40rem;
+  transition: .8s;
+  transition-delay: .5s;
+}
+
+.js .skill-text p{
+  width: 30rem;
+  transform: translate3d(-100vh,0,0);
+  opacity: 0;
+}
+.js .conhecimentos.active p{
+  transform: initial;
+  opacity: initial;
+}
+.skill-container{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 5rem;
+}
+
+.js .skill-container{
+  grid-template-columns: auto 1fr;
+}
+.skill-card{
+  display: grid;
+  grid-template-columns: auto auto auto;
+ }
+.conteudo-skill{
+  width: 7rem;
+  height: 8rem;
+  background-color: #2d3139;
+  border-radius: .3rem;
+  border: none;
+  padding: .5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  transition: 1s;
+  /*opacity: 0;
+  transform: translate3d(0,-80px,0);*/
+  transition: .5s;
+}
+
+.js .conteudo-skill{
+  opacity: 0;
+  transform: translate3d(0,-80px,0);
+}
+.conteudo-skill:hover{
+  border: 1px solid #393f4a;
+}
+
+.conteudo-skill span{
+  display: block;
+  width: 80%;
+  height: 80%;
+  transition:  1s;
+}
+
+
+
+.skill-container .skill-card .conteudo-skill:nth-child(1) span{
+  background: url('../Assets/html.svg') center center no-repeat;
+  background-size: cover;
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(1) span{
+  background: url('../Assets/hoverSvg/html.svg') center center no-repeat;
+  background-size: cover;
+}
+
+
+
+.skill-container .skill-card .conteudo-skill:nth-child(2) span{
+  width: 75%;
+  height: 75%;
+  background: url('../Assets/css.svg') center center no-repeat;
+
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(2) span{
+  width: 75%;
+  height: 75%;
+  background: url('../Assets/hoverSvg/css.svg') center center no-repeat;
+
+}
+
+
+
+
+.skill-container .skill-card .conteudo-skill:nth-child(3) span{
+  background: url('../Assets/javaScript.svg') center center no-repeat;
+  background-size: cover;
+
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(3) span{
+  display: block;
+  background: url('../Assets/hoverSvg/javaScript.svg') center center no-repeat;
+  background-size: cover;
+
+}
+
+
+.skill-container .skill-card .conteudo-skill:nth-child(4) span{
+ background: url('../Assets/bootstrap.svg') center center no-repeat;
+ background-size: cover;
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(4) span{
+  background: url('../Assets/hoverSvg/bootstrap.svg') center center no-repeat;
+  background-size: cover;
+}
+
+
+.skill-container .skill-card .conteudo-skill:nth-child(5) span{
+  background: url('../Assets/react.svg') center center no-repeat;
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(5) span{
+  background: url('../Assets/hoverSvg/react.svg') center center no-repeat;
+}
+
+
+
+.skill-container .skill-card .conteudo-skill:nth-child(6) span{
+  background: url('../Assets/redux.svg') center center no-repeat;
+  background-size: cover;
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(6) span{
+  background: url('../Assets/hoverSvg/redux.svg') center center no-repeat;
+  background-size: cover;
+}
+
+.skill-container .skill-card .conteudo-skill:nth-child(7) span{
+  background: url('../Assets/typescript.svg') center center no-repeat;
+  background-size: cover;
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(7) span{
+  background: url('../Assets/hoverSvg/typescript.svg') center center no-repeat;
+  background-size: cover;
+}
+
+.skill-container .skill-card .conteudo-skill:nth-child(8) span{
+  background: url('../Assets/styled-components.svg') center center no-repeat;
+  background-size: cover;
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(8) span{
+  background: url('../Assets/hoverSvg/styled-components.svg') center center no-repeat;
+  background-size: cover;
+}
+
+.skill-container .skill-card .conteudo-skill:nth-child(9) span{
+  background: url('../Assets/jest.svg') center center no-repeat;
+  background-size: cover;
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(9) span{
+  background: url('../Assets/hoverSvg/jest.svg') center center no-repeat;
+  background-size: cover;
+}
+
+
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(1){
+  animation: skill-Card 1s forwards;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(2){
+  animation: skill-Card 1s forwards 0.5s;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(3){
+  animation: skill-Card 1s forwards 1s;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(4){
+
+  animation: skill-Card 1s forwards 1.5s;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(5){
+  animation: skill-Card 1s forwards 2s;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(6){
+  animation: skill-Card 1s forwards 2.5s;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(7){
+  animation: skill-Card 1s forwards 3s;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(8){
+  animation: skill-Card 1s forwards 3.5s;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(9){
+  animation: skill-Card 1s forwards 4s;
+}
+
+
+/*----------------------RESPONSIVIDADE---------------------------------*/
+@media (max-width:1000px){
+  .skill-card{
+    gap: 2rem;
+    grid-template-columns: auto auto auto;
+  }
+  .js .skill-container{
+    grid-template-columns: auto;
+    justify-items: center;
+  }
+  .skill-container .skill-text h2{
+    width: 100%;
+    text-align: center;
+  }
+  .skill-container .skill-text p{
+    width: fit-content;
+    text-align: center;
+    height: 4rem;
+    margin-bottom: 1rem;
+  }
+  .js .conhecimentos{
+    height: fit-content;
+  }
+  .conteudo-skill{
+    width: 6rem;
+    height: 7rem;
+  }
+}
+ 

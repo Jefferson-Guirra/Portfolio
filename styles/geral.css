@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;700&display=swap');
+
+
+/*----------------------GERAL------------------------------*/
+
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+:root{
+  --first-color:#0096d6;
+  --second-color:#257aa7;
+  --three-color:#2d3139;
+  --four-color:#283033;
+  --fontFirst:'Saira', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+ul{
+  list-style: none;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.088);
+}
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 4px;
+}
+body{
+  font-family: var(--fontFirst);
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--three-color);
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+  
+}
+p{
+  opacity: 0.8;
+}
+img{
+  width: 100%;
+}
+
+
+.title{
+  font-size: 3rem;
+  position: relative;
+  margin-block: 1rem;
+  color: white;
+
+}
+
+.title::after{
+  content: '';
+  display: inline-block;
+  margin-left: .5rem;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+
+}
+
+
+
+
+
+/*----------------------ANIMAÇÕES------------------------------*/
+
+
+@keyframes anima-size{
+  from{
+    opacity: 0;
+    width: 0px;
+  }
+  to{
+    opacity: initial;
+    width: 105px;
+  }
+}
+@keyframes anima-Skill{
+  from{
+    opacity: 0;
+    width: 0px;
+  }
+  to{
+    opacity: initial;
+    width: 150px;
+  }
+}
+
+@keyframes show-rotate{
+  from{
+    transform: initial;
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-Words {
+  5%{
+    opacity: 1;
+  }
+  10%,20%{
+    opacity: 1;
+    transform: rotate(3deg);
+  }
+
+  15%{
+    transform: rotate(-1deg);
+  }
+  25%{
+    opacity: 0;
+    transform: translateY(90px) rotate(10deg);
+  
+  }
+}
+
+
+@keyframes show-Avatar{
+  10%{
+    top: 24vh;
+  }
+
+  20%{
+    top: 23vh;
+  }
+  30%{
+    top: 22vh;
+  }
+  40%{
+    top: 21vh;
+  }
+  50%{
+    top: 20vh;
+  }
+  60%{
+    top: 21vh;
+  }
+  70%{
+    top: 22vh;
+  }
+  80%{
+    top: 23vh;
+  }
+  90%{
+    top: 24vh;
+  }
+  100%{
+    top: 25vh;
+  }
+}
+
+@keyframes show-AvatarMob{
+  10%{
+    top: 31vh;
+  }
+
+  20%{
+    top: 30vh;
+  }
+  30%{
+    top: 29vh;
+  }
+  40%{
+    top: 28vh;
+  }
+  50%{
+    top: 27vh;
+  }
+  60%{
+    top: 28vh;
+  }
+  70%{
+    top: 29vh;
+  }
+  80%{
+    top: 30vh;
+  }
+  90%{
+    top: 31vh;
+  }
+  100%{
+    top: 32vh;
+  }
+}
+
+@keyframes anima-Left{
+  to{
+    transform: initial;
+    opacity: initial;
+    visibility: visible;
+  }
+}
+
+@keyframes anima-Card {
+  from{
+    transform: translate3d(-80vw,0,0);
+    opacity: 0;
+  }
+  to{
+    opacity: initial;
+    visibility: visible;
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+@keyframes anima-title{
+  to{
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+
+@keyframes skill-Card {
+
+  to{
+    opacity: initial;
+    transform: initial;
+    visibility: visible;
+  }
+}
+
+
+@keyframes anima-Background{
+  0%{
+    background: url('../Assets/java.svg') center center no-repeat;
+  }
+
+  20%{
+    background: url('../Assets/php.svg') center center no-repeat;
+  }
+
+  40%{
+    background: url('../Assets/hoverSvg/html.svg') center center no-repeat;
+  }
+  60%{
+    background: url('../Assets/hoverSvg/bootstrap.svg') center center no-repeat;
+  }
+  80%{
+    background: url('../Assets/hoverSvg/javaScript.svg') center center no-repeat;
+  }
+  100%{
+    background: url('../Assets/react.svg') center center no-repeat;
+  }
+}

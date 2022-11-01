@@ -1,0 +1,254 @@
+.projeto{
+  color: white;
+  background-color: var(--three-color);
+  overflow: hidden;
+  padding: 1rem;
+  
+}
+
+.js .projeto .title{
+  position: relative;
+  transform: translate(-100vh);
+  grid-column: 1/-1;
+  opacity: 0;
+  transition: 1s;
+}
+.js .projeto.active .title{
+  opacity: initial;
+  transform: initial;
+}
+.projeto-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  gap: 5rem;
+  padding-inline: 2.5rem;
+
+}
+
+/*-----------------------CARD-CONTEUDO-STYLE-------------------------------*/
+.projeto-conteudo{
+  height: 100%;
+  border-radius: .4rem;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  padding: .5rem;
+}
+.projeto-conteudo:hover{
+  transform: translateZ(20px) rotateX(20px) rotateY(30deg);
+}
+
+.js .projeto-conteudo{
+  opacity: 0;
+}
+
+.js .projeto.active .projeto-container .projeto-conteudo:nth-child(1) {
+  animation: anima-Card 1.5s forwards;
+}
+
+.js .projeto.active .projeto-container .projeto-conteudo:nth-child(2) {
+  animation: anima-Card 1.5s forwards .7s;
+}
+
+.js .projeto.active .projeto-container .projeto-conteudo:nth-child(3) {
+  animation: anima-Card 1.5s forwards 1.2s;
+}
+
+.js .projeto.active .projeto-container .projeto-conteudo:nth-child(4) {
+  animation: anima-Card 1.5s forwards 1.9s;
+}
+
+.js .projeto.active .projeto-container .projeto-conteudo:nth-child(5) {
+  animation: anima-Card 1.5s forwards 2.6s;
+}
+.js .projeto.active .projeto-container .projeto-conteudo:nth-child(6) {
+  animation: anima-Card 1.5s forwards 3.3s;
+}
+
+
+
+
+
+
+/*-----------------------CARD-STYLE--------------------------------------------*/
+.projeto-conteudo .caixa{
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  transform-style: preserve-3d;
+  border-radius: .4rem;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff08;
+  transition: transform .5s;
+  padding: .4rem;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, transparent, rgb(255, 255,255,.1),transparent,transparent);
+  animation: meu-Gradiente 5s ease infinite;
+}
+
+.projeto-container .caixa h4{
+  text-align: center;
+  margin-block: .5rem;
+}
+.projeto-conteudo .caixa p{
+  width: 100%;
+  text-align: left;
+}
+
+
+.projeto-container .projeto-conteudo:nth-child(1) svg > *{
+  fill: white;
+}
+
+.projeto-container .projeto-conteudo:nth-child(1) a{
+  background-color: #2196f3;
+}
+
+
+
+.projeto-container .projeto-conteudo:nth-child(2) a{
+  background-color: #e91e63;
+}
+
+
+.projeto-container .projeto-conteudo:nth-child(3) a{
+  background-color: #23c186;
+}
+
+
+
+.projeto-container .projeto-conteudo:nth-child(4) a{
+  background-color: #2196f3;
+}
+
+
+.projeto-container .projeto-conteudo:nth-child(5) a{
+  background-color: #e91e63;
+}
+
+
+.projeto-container .projeto-conteudo:nth-child(6) a{
+  background-color: #23c186;
+}
+
+
+
+
+.projeto-container .projeto-conteudo .caixa span{
+  display: block;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+.projeto-conteudo .caixa {
+  font-size: 1rem;
+}
+
+.projeto-conteudo .caixa a{
+  cursor: pointer;
+  font-size: 1rem;
+  padding: .3rem 3rem;
+  margin: 0px .9rem .5rem;
+  border-radius: .3rem;
+  transition: 1s;
+  margin-block: .5rem;
+}
+
+.projeto-conteudo .caixa:hover a{
+  background-color: var(--second-color);
+}
+
+
+
+.projeto .foot-projeto{
+  display: inline-block;
+  grid-column: 1/-1;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem  0.7rem;
+  margin-top: 1rem;
+ 
+  transition: .8s;
+}
+
+.js .projeto .foot-projeto {
+  transform: translate3d(-1000px,0,0);
+}
+
+.js .projeto.active .foot-projeto{
+  transform: initial;
+}
+
+
+.projeto .foot-projeto a{
+  padding: 0.5rem 0.7rem;
+  transition: border 4s;
+  
+  }
+.projeto .foot-projeto a:hover{
+    border-bottom: 1px solid white;
+}
+/*----------------RESPONSIVIDADE-------------------------------------*/
+
+
+
+@media (max-width:1100px){
+  .projeto{
+    height: fit-content;
+    text-align: center;
+  }
+  p{
+    font-size: .97rem;
+  }
+  .projeto-container{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .projeto-container .projeto-conteudo .caixa a{
+    width: fit-content;
+    
+  }
+
+  /*.projeto-container .projeto-conteudo .caixa{
+    height: 15rem;
+  }*/
+
+ 
+}
+
+@media (max-width:750px){
+   .projeto-container{
+    grid-template-columns: 20rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+
+}
+
+/*------------------------Animações----------------------------------------*/
+
+@keyframes meu-Gradiente {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+
+}
+
+
+
+
