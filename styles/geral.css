@@ -163,7 +163,17 @@ img{
     top: 25vh;
   }
 }
-
+@keyframes show-pop{
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.1,1.1);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
 @keyframes show-AvatarMob{
   10%{
     top: 31vh;
