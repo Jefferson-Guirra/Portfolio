@@ -19,7 +19,7 @@ O site é composto por quatro seções:
 
 ## 💼 Tecnologias utilizadas
 
-Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+Para o desenvolvimento do website utilizei as seguintes tecnologias:
 
 - HTML;
 - Css;
