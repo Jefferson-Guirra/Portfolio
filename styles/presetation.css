@@ -71,8 +71,7 @@
   top: 40vh;
   left: 4vw;
   font-size: 2rem;
-  transform: translate3d(-80px, 0, 0);
-  animation: anima-Left 0.8s forwards;
+  animation: anima-Card 0.8s forwards;
   width: 40rem;
 }
 
@@ -142,7 +141,7 @@
   height: calc(100vh - 6.5rem);
   color: white;
   font-size: 2rem;
-  animation: anima-Left 0.8s forwards;
+  animation: anima-Card 0.8s forwards;
 }
 
 .container-card{
