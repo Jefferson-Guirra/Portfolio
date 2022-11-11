@@ -112,6 +112,15 @@
 
 
 /*----------------------------RESPONSIVIDADE------------------------------*/
+
+@media (max-width:40rem){
+    .conteudo-sobre p{
+    font-size: 1rem;
+    line-height: 150%;
+    width: 100%;
+    text-align: center;
+  }
+}
 @media (max-width:1000px){
   .sobre .title{
     text-align: center;
@@ -135,12 +144,6 @@
     width: 35px;
     right: 10.3rem;
     top: 3rem;
-  }
-
-  .conteudo-sobre p{
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
   }
 }
 
