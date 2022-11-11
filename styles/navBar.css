@@ -1,17 +1,16 @@
 /*-------------------------------NAV-MENU-------------------------------------*/
 #navBar {
   padding-inline: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.088);
   background-color: var(--three-color);
-  backdrop-filter: blur(3px);
   color: white;
   font-size: 1.1rem;
-  font-family: var(--fontFirst);
+  font-family: var(--font-second);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10000;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.071);
+  border: 1px solid rgba(255, 255, 255, 0.068);
+
 }
 #navContainer {
   max-width:1120px;
