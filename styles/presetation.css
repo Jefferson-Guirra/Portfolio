@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -32,9 +32,15 @@
   background-color: var(--second-color);
 }
 
-#name {
-  font-size: 3rem;
+#title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
   font-weight: bold;
+}
+
+#title span{
+  color: var(--three-color);
+
 }
 
 #grid2 {
@@ -62,15 +68,16 @@
   color: white;
   position: absolute;
   z-index: 200;
-  top: 30vh;
-  left: 12vw;
+  top: 40vh;
+  left: 4vw;
   font-size: 2rem;
   transform: translate3d(-80px, 0, 0);
   animation: anima-Left 0.8s forwards;
-  width: 25rem;
+  width: 40rem;
 }
 
-.card-1 p {
+.card-1 #title {
+  font-size: 2.5rem;
   opacity: initial;
 }
 
@@ -89,7 +96,7 @@
   width: 15rem;
   height: 15rem;
   position: absolute;
-  top: 25vh;
+  top: 35vh;
   left: 70vw;
   border-radius: 50%;
   animation: show-Avatar 8s infinite linear;
@@ -102,45 +109,78 @@
 }
 
 /*------------------------------RESPONSIVIDADE--------------------------*/
-@media (max-width: 1200px) {
-  .card-1 {
-    left: 10vh;
-  }
-}
 
-@media (max-width: 850px) {
-  .card-1 {
-    left: 5vw;
-    max-width: 17rem;
+@media (max-width:1300px){
+  .card-1{
+    left: 4vw;
+    top: 40vh;
   }
-  .card-2 {
-    left: 60vw;
-  }
-  .card-1 #name {
+  .card-1 #title{
     font-size: 2rem;
-  }
-  .rotate-words {
-    display: block;
-    top: 0.8rem;
-    left: -1rem;
+    
   }
 
-  .card-logo p {
-    opacity: 0;
+  .container-card p{
+    width: 470px;
   }
 }
+@media (max-width:1000px){
+  #presetation{
+    display: none;
+  }
+ 
 
-@media (max-width: 550px) {
   .card-1 {
-    width: 15rem;
-    font-size: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: initial;
+  margin: 0 auto;
+  width: 100%;
+  height: calc(100vh - 6.5rem);
+  color: white;
+  font-size: 2rem;
+  animation: anima-Left 0.8s forwards;
+}
+
+.container-card{
+  max-width: 1120px;
+  padding-inline: 2rem;
+}
+
+#title span{
+  color: var(--second-color);
+
+}
+
+.container-card article{
+  position: relative;
+  text-align: center;
+}
+
+.container-card article span{
+ display: block;
+}
+
+
+.card-1 p{
+  text-align: center;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+  .card-2{
+    display: none;
   }
 
-  .card-2 {
-    width: 10rem;
-    height: 10rem;
-    top: 32vh;
-    left: 50;
-    animation: show-AvatarMob 3s infinite linear;
+
+  .rotate-words span{
+    left: 50%;
+    background-color: var(--second-color);
   }
+
+
 }
+

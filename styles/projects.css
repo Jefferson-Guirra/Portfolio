@@ -5,6 +5,10 @@
   padding: 1rem;
   
 }
+.projeto .title{
+  max-width: 1120px;
+  margin: 0 auto;
+}
 
 .js .projeto .title{
   position: relative;
@@ -19,30 +23,71 @@
 }
 .projeto-container{
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr 1fr;
+  max-width: 1120px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 2.5rem;
   justify-content: center;
   align-items: center;
   align-content: center;
   position: relative;
-  gap: 5rem;
-  padding-inline: 2.5rem;
+  gap: 1.5rem;
 
 }
 
 /*-----------------------CARD-CONTEUDO-STYLE-------------------------------*/
 .projeto-conteudo{
-  height: 100%;
-  border-radius: .4rem;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-  inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-  5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-  padding: .5rem;
+  border: 1px solid rgba(255, 255, 255, 0.123);
+  background-color: #ffffff01;
+  border-radius: 2px;
+  margin-bottom: 50px;
+  transition: all 1.5s ease;
+  height: 250px;
 }
-.projeto-conteudo:hover{
-  transform: translateZ(20px) rotateX(20px) rotateY(30deg);
+
+.projeto .projeto-container div:nth-child(1){
+  border-bottom-color:#2196f3 ;
 }
+.projeto .projeto-container div:nth-child(1):hover{
+  border-color:#2196f3 ;
+}
+
+.projeto .projeto-container div:nth-child(2){
+  border-bottom-color:#e91e63 ;
+}
+.projeto .projeto-container div:nth-child(2):hover{
+  border-color:#e91e63 ;
+}
+
+
+.projeto .projeto-container div:nth-child(3){
+  border-bottom-color:#23c18777 ;
+}
+.projeto .projeto-container div:nth-child(3):hover{
+  border-color:#23c18777 ;
+}
+
+.projeto .projeto-container div:nth-child(4){
+  border-bottom-color:#2196f3 ;
+}
+.projeto .projeto-container div:nth-child(4):hover{
+  border-color:#2196f3 ;
+}
+
+.projeto .projeto-container div:nth-child(5){
+  border-bottom-color:#e91e63 ;
+}
+.projeto .projeto-container div:nth-child(5):hover{
+  border-color:#e91e63 ;
+}
+
+.projeto .projeto-container div:nth-child(6){
+  border-bottom-color:#23c18777 ;
+}
+.projeto .projeto-container div:nth-child(6):hover{
+  border-color:#23c18777 ;
+}
+
 
 .js .projeto-conteudo{
   opacity: 0;
@@ -82,17 +127,12 @@
   overflow: hidden;
   height: 100%;
   transform-style: preserve-3d;
-  border-radius: .4rem;
   align-items: center;
   flex-direction: column;
   display: flex;
   justify-content: space-between;
-  background: #ffffff08;
   transition: transform .5s;
-  padding: .4rem;
-  background-size: 400% 400%;
-  background-image: linear-gradient(-45deg, transparent, rgb(255, 255,255,.1),transparent,transparent);
-  animation: meu-Gradiente 5s ease infinite;
+  padding: 1rem 2rem;
 }
 
 .projeto-container .caixa h4{
@@ -101,6 +141,7 @@
 }
 .projeto-conteudo .caixa p{
   width: 100%;
+  font-size: 1.1rem;
   text-align: left;
 }
 
@@ -110,34 +151,34 @@
 }
 
 .projeto-container .projeto-conteudo:nth-child(1) a{
-  background-color: #2196f3;
+  color: #2195f3d4;
 }
 
 
 
 .projeto-container .projeto-conteudo:nth-child(2) a{
-  background-color: #e91e63;
+  color: #e91e63;
 }
 
 
 .projeto-container .projeto-conteudo:nth-child(3) a{
-  background-color: #23c186;
+  color: #23c186;
 }
 
 
 
 .projeto-container .projeto-conteudo:nth-child(4) a{
-  background-color: #2196f3;
+  color: #2196f3;
 }
 
 
 .projeto-container .projeto-conteudo:nth-child(5) a{
-  background-color: #e91e63;
+  color: #e91e63;
 }
 
 
 .projeto-container .projeto-conteudo:nth-child(6) a{
-  background-color: #23c186;
+  color: #23c186;
 }
 
 
@@ -156,17 +197,19 @@
 
 .projeto-conteudo .caixa a{
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: .3rem 3rem;
   margin: 0px .9rem .5rem;
-  border-radius: .3rem;
+  border-radius: 2px;
+  text-align: center;
   transition: 1s;
+  width: 100%;
   margin-block: .5rem;
 }
 
-.projeto-conteudo .caixa:hover a{
+/*.projeto-conteudo .caixa:hover a{
   background-color: var(--second-color);
-}
+}*/
 
 
 
@@ -228,7 +271,7 @@
 
 @media (max-width:750px){
    .projeto-container{
-    grid-template-columns: 20rem;
+    grid-template-columns:100%;
     align-items: center;
     justify-content: center;
     gap: 2rem;

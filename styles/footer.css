@@ -16,7 +16,7 @@
 .foot-Container div{
   display: flex;
   flex-direction: row;
-  gap: .5rem;
+  gap: .2rem;
   align-items: center;
   justify-content: center;
 }
@@ -27,3 +27,12 @@
   align-items: center;
 }
 
+@media (max-width:40rem){
+  .foot-Container  h4{
+    font-size: .8rem;
+  }
+  .foot-Container span{
+    width: 15px;
+    height: 10px;
+  }
+}

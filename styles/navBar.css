@@ -13,6 +13,9 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.071);
 }
 #navContainer {
+  max-width:1120px;
+  margin:0 auto;
+  height: 5rem;
   padding-block: 0.8rem;
   display: flex;
   flex-direction: row;
@@ -44,6 +47,18 @@
 }
 #navContainer .menu li {
   position: relative;
+  opacity: none;
+}
+
+#navContainer .menu li:nth-child(1){
+  animation: navbar .5s ease;
+}
+
+#navContainer .menu li:nth-child(2){
+  animation: navbar .5s ease .2s;
+}
+#navContainer .menu li:nth-child(3){
+  animation: navbar .5s ease .4s;
 }
 
 #navContainer .menu li::after {
@@ -147,7 +162,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--second-color);
+    background-color: var(--three-color);
     z-index: 201;
     text-align: center;
     flex-wrap: nowrap;
@@ -161,47 +176,45 @@
     opacity: initial;
   }
 
-  #navContainer .menu.active ul li {
-    width: 100%;
-  }
   #navContainer .menu.active li {
     transform: translate3d(700px, 0, 0);
-  }
-  #navContainer .menu li::after {
-    left: 11%;
-  }
-  #navContainer .menu #skill::after {
-    width: 31rem;
-    left: 8%;
-  }
-
-  #navContainer .menu #skill:hover::after {
-    visibility: visible;
-    animation: anima-Skill 0.4s forwards;
+    opacity: none;
   }
   #navContainer .menu li:hover::after {
-    visibility: visible;
-    animation: anima-size 0.4s forwards;
+  display: none;
   }
 
-  #navContainer .menu.active li a {
+  #navContainer .menu li a{
+    opacity: 0;
+  }
+  #navContainer .menu.active  li a {
+    opacity: initial;
     font-weight: bold;
     margin-inline: 1.8rem;
+    font-size: 1.8rem;
     padding-block: 0.3rem;
   }
   #navContainer .menu.active li:nth-child(1) {
-    animation: show-mobLinks 1.3s forwards 1s;
+    animation: show-mobLinks .5s forwards .4s;
+    opacity: 1;
+
   }
   #navContainer .menu.active li:nth-child(2) {
-    animation: show-mobLinks 1.3s forwards 0.5s;
+    animation: show-mobLinks .5s forwards .2s;
   }
 
   #navContainer .menu.active li:nth-child(3) {
-    animation: show-mobLinks 1.3s forwards;
+    animation: show-mobLinks .5s forwards;
   }
 }
 
 @keyframes show-mobLinks {
+  from{
+    transform: translate3d(700px, 0, 0);
+    opacity: 0;
+
+    
+  }
   to {
     transform: initial;
     opacity: initial;

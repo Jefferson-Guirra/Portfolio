@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
 /*----------------------GERAL------------------------------*/
@@ -15,6 +17,9 @@
   --three-color:#2d3139;
   --four-color:#283033;
   --fontFirst:'Saira', sans-serif;
+  --font-second:'Open Sans', sans-serif;
+;
+
 }
 
 html{
@@ -36,7 +41,8 @@ ul{
   border-radius: 4px;
 }
 body{
-  font-family: var(--fontFirst);
+  padding-top: 5rem;
+  font-family: var(--font-second);
   font-size: 1.2rem;
   color: white;
   background-color: var(--three-color);
@@ -48,7 +54,7 @@ a{
   
 }
 p{
-  opacity: 0.8;
+  opacity: .9;
 }
 img{
   width: 100%;
@@ -72,6 +78,7 @@ img{
   background-color: white;
 
 }
+
 
 
 
@@ -132,35 +139,35 @@ img{
 
 @keyframes show-Avatar{
   10%{
-    top: 24vh;
+    top: 34vh;
   }
 
   20%{
-    top: 23vh;
+    top: 33vh;
   }
   30%{
-    top: 22vh;
+    top:31vh;
   }
   40%{
-    top: 21vh;
+    top: 30vh;
   }
   50%{
-    top: 20vh;
+    top: 30vh;
   }
   60%{
-    top: 21vh;
+    top: 31vh;
   }
   70%{
-    top: 22vh;
+    top: 32vh;
   }
   80%{
-    top: 23vh;
+    top: 33vh;
   }
   90%{
-    top: 24vh;
+    top: 34vh;
   }
   100%{
-    top: 25vh;
+    top: 35vh;
   }
 }
 @keyframes show-pop{
@@ -208,6 +215,17 @@ img{
   }
 }
 
+@keyframes navbar{
+  from{
+    transform: translate3d(100px,0,0);
+    opacity: 0;
+  }
+  to{
+    transform: initial;
+    opacity:initial
+  }
+}
+
 @keyframes anima-Left{
   to{
     transform: initial;
@@ -218,7 +236,7 @@ img{
 
 @keyframes anima-Card {
   from{
-    transform: translate3d(-80vw,0,0);
+    transform: translate3d(0,-70px,0);
     opacity: 0;
   }
   to{
