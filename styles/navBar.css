@@ -110,12 +110,7 @@
 .btn-menu .hamburguer {
   display: block;
   width: 40px;
-
   border-top: 3px solid white;
-  /*position: absolute;
-  top: 30%;
-  left: 48%;
-  transform: translate3d(-50%, -50%, 0);*/
   transition: border 0.4s;
 }
 .btn-menu .hamburguer::before,
@@ -196,7 +191,6 @@
   }
   #navContainer .menu.active li:nth-child(1) {
     animation: show-mobLinks .5s forwards .4s;
-    opacity: 1;
 
   }
   #navContainer .menu.active li:nth-child(2) {
