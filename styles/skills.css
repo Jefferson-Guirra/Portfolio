@@ -6,9 +6,6 @@
   background-color: #283033;
 }
 
-.js .conhecimentos{
-  height: 80vh;
-}
 
 .js .skill-text .text-conhecimentos{
   display: none;
@@ -201,6 +198,14 @@
   background-size: cover;
 }
 
+.skill-container .skill-card .conteudo-skill:nth-child(10) span{
+  background: url('../Assets/nextjs.svg') center center no-repeat;
+}
+.skill-container .skill-card .conteudo-skill:hover:nth-child(10) span{
+
+  background: url('../Assets/hoverSvg/nextjs.svg') center center no-repeat;
+}
+
 
 .conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(1){
   animation: skill-Card 1s forwards;
@@ -228,6 +233,9 @@
   animation: skill-Card 1s forwards 3.5s;
 }
 .conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(9){
+  animation: skill-Card 1s forwards 4s;
+}
+.conhecimentos.active .skill-container .skill-card .conteudo-skill:nth-child(10){
   animation: skill-Card 1s forwards 4s;
 }
 
