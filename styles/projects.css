@@ -88,6 +88,13 @@
   border-color:#23c18777 ;
 }
 
+.projeto .projeto-container div:nth-child(7){
+  border-bottom-color:#2196f3 ;
+}
+.projeto .projeto-container div:nth-child(7):hover{
+  border-color:#2196f3 ;
+}
+
 
 .js .projeto-conteudo{
   opacity: 0;
@@ -114,6 +121,9 @@
 }
 .js .projeto.active .projeto-container .projeto-conteudo:nth-child(6) {
   animation: anima-Card 1.5s forwards 3.3s;
+}
+.js .projeto.active .projeto-container .projeto-conteudo:nth-child(7) {
+  animation: anima-Card 1.5s forwards 4s;
 }
 
 
@@ -196,20 +206,35 @@
 }
 
 .projeto-conteudo .caixa a{
+  position:relative;
   cursor: pointer;
   font-size: 1.3rem;
-  padding: .3rem 3rem;
+  padding: 1rem 3rem;
   margin: 0px .9rem .5rem;
   border-radius: 2px;
   text-align: center;
   transition: 1s;
-  width: 100%;
+  width: calc(fit-content + 2rem);
   margin-block: .5rem;
 }
 
-/*.projeto-conteudo .caixa:hover a{
-  background-color: var(--second-color);
-}*/
+.projeto-conteudo .caixa a::after{
+  content:'';
+  display:block;
+  position:relative;
+  left:-17px;
+  width:0%;
+  height:1.5px;
+  transition: all 1s ease;
+  background:linear-gradient(to right, transparent, currentColor);
+}
+
+.projeto-conteudo .caixa a:hover::after{
+  position:relative;
+  left:-17px;
+  width: calc(100% + 2rem);
+}
+
 
 
 
