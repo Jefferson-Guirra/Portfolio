@@ -1,25 +1,21 @@
 /*-------------------------------NAV-MENU-------------------------------------*/
 #navBar {
-  padding-inline: 1.5rem;
   background-color: var(--three-color);
   color: white;
   font-size: 1.1rem;
-  font-family: var(--font-second);
-  position: fixed;
+  font-family: var(--font-first);
   width: 100%;
-  top: 0;
+  position: fixed;
+  top: 0px;
   z-index: 10000;
   border: 1px solid rgba(255, 255, 255, 0.068);
-
 }
 #navContainer {
   max-width:1120px;
   margin:0 auto;
   height: 5rem;
-  padding-block: 0.8rem;
   display: flex;
   flex-direction: row;
-  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -104,11 +100,13 @@
   cursor: pointer;
   position: relative;
   padding: 0.8rem;
-
+  margin-left: -10rem;
 }
 
 .btn-menu .hamburguer {
   display: block;
+  position: relative;
+  right: 0px;
   width: 40px;
   border-top: 3px solid white;
   transition: border 0.4s;
@@ -141,6 +139,9 @@
 /*--------------------------RESPONSIVIDADE-------------------------------*/
 
 @media (max-width: 720px) {
+  #navBar{
+    padding-inline: 1rem;
+  }
   .btn-menu {
     display: flex;
     z-index: 250;

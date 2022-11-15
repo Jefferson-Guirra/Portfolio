@@ -2,7 +2,7 @@
 .conhecimentos{
   height: fit-content;
   width: 100%;
-  padding-block: 2rem;
+  padding-block: 5rem;
   background-color: #283033;
 }
 
@@ -18,10 +18,10 @@
 
 .skill-text h2{
   margin-bottom: 3rem;
-  transition: .8s;
+  transition: all 1.5s ease;
 }
 .js .skill-text h2{
-  transform: translate3d(-100vh,0,0);
+  transform: translate3d(0,-70px,0);
   opacity: 0;
 }
 .js .conhecimentos.active h2{
@@ -38,13 +38,13 @@
 }
 .skill-text p{
   width: 40rem;
-  transition: .8s;
+  transition: all 1.5s ease;
   transition-delay: .5s;
 }
 
 .js .skill-text p{
   width: 30rem;
-  transform: translate3d(-100vh,0,0);
+  transform: translate3d(0,-70px,0);
   opacity: 0;
 }
 .js .conhecimentos.active p{

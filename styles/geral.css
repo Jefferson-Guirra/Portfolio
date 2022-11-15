@@ -16,8 +16,7 @@
   --second-color:#257aa7;
   --three-color:#2d3139;
   --four-color:#283033;
-  --fontFirst:'Saira', sans-serif;
-  --font-second:'Open Sans', sans-serif;
+  --font-first:'Open Sans', sans-serif;
 ;
 
 }
@@ -41,8 +40,9 @@ ul{
   border-radius: 4px;
 }
 body{
+  position: relative;
   padding-top: 5rem;
-  font-family: var(--font-second);
+  font-family: var(--font-first);
   font-size: 1.2rem;
   color: white;
   background-color: var(--three-color);
@@ -51,7 +51,6 @@ body{
 a{
   text-decoration: none;
   color: currentColor;
-  
 }
 p{
   opacity: .9;
@@ -64,7 +63,7 @@ img{
 .title{
   font-size: 3rem;
   position: relative;
-  margin-block: 1rem;
+  margin-bottom: 3rem;
   color: white;
 
 }

@@ -1,9 +1,9 @@
 /*------------------------------------SOBRE-STYLE-GERAL------------------*/
 .sobre{
   background-color: var(--four-color);
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
-  padding: 1rem;
+  padding-block: 5rem;
   position: relative;
 }
 
@@ -31,7 +31,7 @@
   height: 100% ;
   padding-inline: 1.2rem;
   opacity: 0;
-  transition:  1s;
+  transition:  1s ease 1s;
 
 }
 
@@ -75,7 +75,7 @@
 .js .sobre .title{
   opacity: 0;
   transform:  translate3d(0,-50px,0);
-  transition: 1s ease;
+  transition: 1.5s ease;
 }
 
 .js .sobre.active .title{
@@ -89,7 +89,7 @@
   font-size: 1.3rem;
   opacity: 0;
   transition: all 2s ease;
-  transition-delay: .3s;
+  transition-delay: .5s;
 }
 
 .js .sobre.active .conteudo-sobre {

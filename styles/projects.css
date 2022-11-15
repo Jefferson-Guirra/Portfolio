@@ -2,8 +2,7 @@
   color: white;
   background-color: var(--three-color);
   overflow: hidden;
-  padding: 1rem;
-  
+  padding-block: 5rem;
 }
 .projeto .title{
   max-width: 1120px;
@@ -73,9 +72,153 @@ animation: anima-Card 1s forwards 3.5s;
 .js .projeto.active .card-projeto:nth-child(7){
 animation: anima-Card 1s forwards 4.2s;
 }
-.card-projeto img{
+.card-projeto .content-projeto img{
   border-radius: 3px;
 }
+.card-projeto .content-projeto .img-projeto{
+  position: relative;
+  z-index: -1;
+}
+.container-projetos .card-projeto .content-projeto .img-projeto::after{
+ content: '';
+  position: absolute;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  display: block;
+  z-index: 50;
+  width: 34px;
+  height: 34px; 
+  opacity: 0;
+  transition: all 1s ease; 
+}
+.container-projetos .card-projeto:nth-child(1) .content-projeto .img-projeto::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  background: url('../Assets/dog.svg') center center no-repeat;
+  background-size: cover;
+  display: block;
+  z-index: 50;
+  width: 34px;
+  height: 34px; 
+  opacity: 0;
+  transition: all 1s ease; 
+}
+.container-projetos .card-projeto:nth-child(1):hover .content-projeto .img-projeto::after{
+  opacity: initial;
+}
+
+.container-projetos .card-projeto:nth-child(2) .content-projeto .img-projeto::after{
+  background: url('../Assets/play.svg') center center no-repeat;
+  background-size: cover;
+}
+.container-projetos .card-projeto:nth-child(2):hover .content-projeto .img-projeto::after{
+  opacity: initial;
+}
+
+.container-projetos .card-projeto:nth-child(3) .content-projeto .img-projeto::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  background: url('../Assets/board.svg') center center no-repeat;
+  background-size: cover;
+  display: block;
+  z-index: 50;
+  width: 34px;
+  height: 34px; 
+  opacity: 0;
+  transition: all 1s ease; 
+}
+.container-projetos .card-projeto:nth-child(3):hover .content-projeto .img-projeto::after{
+  opacity: initial;
+}
+
+
+.container-projetos .card-projeto:nth-child(4) .content-projeto .img-projeto::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  background: url('../Assets/lion.svg') center center no-repeat;
+  background-size: cover;
+  display: block;
+  z-index: 50;
+  width: 34px;
+  height: 34px; 
+  opacity: 0;
+  transition: all 1s ease; 
+}
+.container-projetos .card-projeto:nth-child(4):hover .content-projeto .img-projeto::after{
+  opacity: initial;
+}
+
+.container-projetos .card-projeto:nth-child(5) .content-projeto .img-projeto::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  background: url('../Assets/doctor.svg') center center no-repeat;
+  background-size: cover;
+  display: block;
+  z-index: 50;
+  width: 34px;
+  height: 34px; 
+  opacity: 0;
+  transition: all 1s ease; 
+}
+.container-projetos .card-projeto:nth-child(5):hover .content-projeto .img-projeto::after{
+  opacity: initial;
+}
+
+
+.container-projetos .card-projeto:nth-child(6) .content-projeto .img-projeto::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  background: url('../Assets/tasks.svg') center center no-repeat;
+  background-size: cover;
+  display: block;
+  z-index: 50;
+  width: 34px;
+  height: 34px; 
+  opacity: 0;
+  transition: all 1s ease; 
+}
+.container-projetos .card-projeto:nth-child(6):hover .content-projeto .img-projeto::after{
+  opacity: initial;
+}
+
+
+.container-projetos .card-projeto:nth-child(7) .content-projeto .img-projeto::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  background: url('../Assets/trips.svg') center center no-repeat;
+  background-size: cover;
+  display: block;
+  z-index: 50;
+  width: 34px;
+  height: 34px; 
+  opacity: 0;
+  transition: all 1s ease; 
+}
+.container-projetos .card-projeto:nth-child(7):hover .content-projeto .img-projeto::after{
+  opacity: initial;
+}
+
+
 .card-projeto .content-projeto{
   grid-area:1/1
 }
@@ -138,6 +281,7 @@ animation: anima-Card 1s forwards 4.2s;
 }
 @media (max-width:70rem){
   .container-projetos{
+    padding-inline: 1rem;
     grid-template-columns: 1fr 1fr;
   }
 }
