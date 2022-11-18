@@ -13,10 +13,9 @@
 
 .js .projeto .title{
   position: relative;
-  transform: translate(-100vh);
-  grid-column: 1/-1;
+  transform: translate3d(0,-70px,0);
   opacity: 0;
-  transition: 1.5s;
+  transition: 1.5s ease;
 }
 .js .projeto.active .title{
   opacity: initial;
@@ -162,6 +161,12 @@
 .foot-projetos a:hover p::after{
   width: 120%;
   opacity: initial;
+}
+
+@media (max-width:720px){
+  .projeto .title{
+    padding-inline: 1rem;
+  }
 }
 
 

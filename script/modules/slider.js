@@ -39,7 +39,7 @@ export default function slider() {
     }
   }
 
-  const infiniteSlider = () => {
+  const infiniteSliderScroll = () => {
     const loop = setInterval(() => {
       !infinite ? clearInterval(loop) : ''
       if (count < sliders.length - 1 && infinite && activeToScroll) {
@@ -61,5 +61,5 @@ export default function slider() {
   prev.addEventListener('click', prevSlide)
   sliderContent.addEventListener('click', () => (infinite = false))
   window.addEventListener('resize', calcResize)
-  /*infiniteSlider()*/
+  infiniteSliderScroll()
 }
