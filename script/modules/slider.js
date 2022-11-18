@@ -4,15 +4,23 @@ export default function slider() {
   const sliderContent = document.querySelector('.slider-content')
   const next = document.querySelector('.next')
   const prev = document.querySelector('.prev')
-  const projetos = document.querySelector('#projetos')
   const containerSlider = document.querySelector('.slider-container')
   let size = containerSlider.getBoundingClientRect().width
-  const activeToScroll = projetos.classList.contains('active')
-  let infinite = true
+  let activeSlideScroll = false
+  let infinite = false
   let current = 0
   let count = 0
 
   const calcResize = debounce(resizeElement,300)
+  const validate = debounce(validateInfiniteScroll,300)
+
+  function validateInfiniteScroll (){
+    const projetos = document.querySelector('#projetos')
+    activeSlideScroll = projetos.classList.contains('active')
+    if(activeSlideScroll){
+      infinite = true
+    }
+  }
 
   function resizeElement  (){
     size = containerSlider.getBoundingClientRect().width
@@ -24,7 +32,6 @@ export default function slider() {
     
   }
   const nextSlide = () => {
-    console.log(current)
     infinite = false
     if (current < sliders.length - 1) {
       current = current + 1
@@ -42,11 +49,11 @@ export default function slider() {
   const infiniteSliderScroll = () => {
     const loop = setInterval(() => {
       !infinite ? clearInterval(loop) : ''
-      if (count < sliders.length - 1 && infinite && activeToScroll) {
+      if (count < sliders.length - 1 && infinite | activeSlideScroll) {
         count++
         current++
         sliderContent.style.transform = `translateX(-${size * count}px)`
-      } else if (infinite) {
+      } else{
         sliderContent.style.opacity = 0
         setTimeout(() => {
           sliderContent.style.opacity = 1
@@ -61,5 +68,6 @@ export default function slider() {
   prev.addEventListener('click', prevSlide)
   sliderContent.addEventListener('click', () => (infinite = false))
   window.addEventListener('resize', calcResize)
+  window.addEventListener('scroll',validate)
   infiniteSliderScroll()
 }
