@@ -6,21 +6,12 @@ export default function slider() {
   const prev = document.querySelector('.prev')
   const containerSlider = document.querySelector('.slider-container')
   let size = containerSlider.getBoundingClientRect().width
-  let activeSlideScroll = false
-  let infinite = false
   let current = 0
   let count = 0
+  let infinite = true
 
   const calcResize = debounce(resizeElement,300)
-  const validate = debounce(validateInfiniteScroll,300)
 
-  function validateInfiniteScroll (){
-    const projetos = document.querySelector('#projetos')
-    activeSlideScroll = projetos.classList.contains('active')
-    if(activeSlideScroll){
-      infinite = true
-    }
-  }
 
   function resizeElement  (){
     size = containerSlider.getBoundingClientRect().width
@@ -49,11 +40,11 @@ export default function slider() {
   const infiniteSliderScroll = () => {
     const loop = setInterval(() => {
       !infinite ? clearInterval(loop) : ''
-      if (count < sliders.length - 1 && infinite | activeSlideScroll) {
+      if (count < sliders.length - 1 && infinite) {
         count++
         current++
         sliderContent.style.transform = `translateX(-${size * count}px)`
-      } else{
+      } else if (infinite){
         sliderContent.style.opacity = 0
         setTimeout(() => {
           sliderContent.style.opacity = 1
@@ -68,6 +59,5 @@ export default function slider() {
   prev.addEventListener('click', prevSlide)
   sliderContent.addEventListener('click', () => (infinite = false))
   window.addEventListener('resize', calcResize)
-  window.addEventListener('scroll',validate)
   infiniteSliderScroll()
 }
