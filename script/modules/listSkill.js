@@ -16,7 +16,7 @@ export default function listSkill (){
 
     7:'Styled Components é uma biblioteca que utiliza o conceito de Css-in-JS, ou seja, que nos permite escrever códigos CSS dentro do JavaScript',
     8:'Jest é um framework de testes, usado para prevenção de erros.',
-    9:'Next.js é um poderoso framework baseado em react o qual permite renderização ao lado do servidor e geração de páginas estáticas para web.'
+    9:'Next.js é um poderoso framework baseado em react que possui funcionalidades como renderização ao lado do servidor e geração de páginas estáticas para web.'
   }
 
   return listInfo
