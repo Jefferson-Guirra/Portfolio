@@ -3,7 +3,8 @@ export default function animaScroll(elements) {
   const sections =document.querySelectorAll(elements)
   const calcTopDebounce = debounce(calcTop,150)
   
-  addEventListener('scroll',calcTopDebounce)
+  window.addEventListener('scroll',calcTopDebounce)
+ 
   window.onload = ()=>{ 
     calcTop()
   }

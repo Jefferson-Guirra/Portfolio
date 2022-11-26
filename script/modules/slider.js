@@ -8,13 +8,37 @@ export default function slider() {
   let size = containerSlider.getBoundingClientRect().width
   let current = 0
   let count = 0
-  let infinite = true
+  let infinite = false
+  let validateSliderActive
 
+  window.onload = ()=> {
+    sliderActive()
+  }
+
+  const activeInfiniteSliderOnScroll = debounce(sliderActive,150)
   const calcResize = debounce(resizeElement,300)
 
 
+  function sliderActive(){
+    const active = document.querySelector('.projeto').classList.contains('active')
+    if (active && !validateSliderActive) {
+      sliderContent.style.opacity = 1
+      validateSliderActive = true
+      infinite = true
+      infiniteSliderScroll()
+    } else if (!active) {
+      sliderContent.style.opacity = 0
+      infinite = false
+      validateSliderActive = false
+      current = 0
+      count = 0
+      sliderContent.style.transform = 'translateX(0px)'
+    }
+  }
+
+
   function resizeElement  (){
-    size = containerSlider.getBoundingClientRect().width
+    size = sliderContent.getBoundingClientRect().width
     sliders.forEach(item => {
       item.style.width = `${(size * 80) / 100}px`
       item.style.marginInline = `${(size * 10) / 100}px`
@@ -37,7 +61,7 @@ export default function slider() {
     }
   }
 
-  const infiniteSliderScroll = () => {
+  function infiniteSliderScroll(){
     const loop = setInterval(() => {
       !infinite ? clearInterval(loop) : ''
       if (count < sliders.length - 1 && infinite) {
@@ -55,9 +79,15 @@ export default function slider() {
       }
     }, 3000)
   }
+
+
+
+
+
+
   next.addEventListener('click', nextSlide)
   prev.addEventListener('click', prevSlide)
   sliderContent.addEventListener('click', () => (infinite = false))
   window.addEventListener('resize', calcResize)
-  infiniteSliderScroll()
+  window.addEventListener('scroll',activeInfiniteSliderOnScroll)
 }
