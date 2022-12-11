@@ -5,14 +5,14 @@ import animaScroll from './modules/animaScroll.js'
 import slider from './modules/slider.js'
 
 
-menuMobile()
+/*menuMobile()*/
 const scrollAnima = animaScroll('[data-anima]')
 scrollAnima()
 const skillList =listSkill()
 const cardSkill = new Card('.conteudo-skill','.skill-text p',skillList)
 cardSkill.init()
-slider()
-
+slider('.cards','.spin')
+slider('.skill-card', '.spinCard')
 
 
 

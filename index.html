@@ -11,17 +11,38 @@
     <script>
       document.documentElement.className ='js'
     </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body>
     <nav id="navBar">
-      <div id="navContainer">
-        <div class="social-midia">
-          <a href="https://github.com/Jefferson-Guirra" target="_blank"><img src="./Assets/github.svg"></a>
-          <a href="https://www.linkedin.com/in/jefferson-guirra-developer" target="_blank"> <img src="./Assets/lkd.svg"></a>
-          <a href="https://www.instagram.com/jefferson.guirra/" target="_blank"><img src="./Assets/insta.svg"></a>
-          <a href="https://wa.me/5574988728305" target="_blank"><img src="./Assets/whatsapp.svg"></a>
-          <a href="./assets/Jefferson Guirra de Freitas Silva.pdf" download="curriculum jefferson" target="_blank"><img src="./Assets/curriculum.svg"></a>
-        </div>
+      <div class="navigation">
+          <div class="menuNav">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+          <div class="navLinks">
+            <a href="#presetation" class="icon">
+              <img src="./Assets/earth.svg" alt="Planeta Terra">
+            </a>
+
+            <a href="#sobre" class="icon">
+              <img src="./Assets/astronaut.svg" alt="Planeta Terra">
+            </a>
+            <a href="#projetos" class="icon">
+              <img src="./Assets/rocket.svg" alt="Planeta Terra">
+            </a>
+
+            <a href="#conhecimentos" class="icon">
+              <img src="./Assets/space.svg" alt="Planeta Terra">
+            </a>
+            <a href="#contact" class="icon">
+              <img src="./Assets/contact.svg" alt="Planeta Terra">
+            </a>
+          </div>
+      </div>
+      <!--<div id="navContainer">
+        <p>Jefferson</p>
         
 
         <ul class="menu">
@@ -34,6 +55,9 @@
           <li id="skill">
             <a href="#conhecimentos">Conhecimentos</a>
           </li>
+          <li>
+            <a href="#contact">Contatos</a>
+          </li>
         </ul>
         <button class="btn-menu">
           <span class="hamburguer">
@@ -42,324 +66,311 @@
               <span class="line"></span>
           </span>
         </button>
-      </div>
+      </div>-->
     </nav>
 
-    <section id="presetation">
-      <article>
-        <div id="grid1"></div>
-        <div id="grid2"></div>
-      </article>
-    </section>
-
-    <main class="card-1">
-    <div class="container-card">
-      <p id="title">Transformando idéias em grandes resultados através de <span>produtos digitais</span> de alta qualidade.</p>
-      <article>
-      <span id="dev">Desenvolvedor</span>
-        <div class="rotate-words">
-          <span style="--d: 0s">front end.</span>
-          <span style="--d: 4s">mobile.</span>
-
-          <span style="--d: 7s">web.</span>
+    <section class="presentation" id="presetation">
+      <div class="logo">
+        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_btkj8xsi.json" background="transparent"  speed="1"  style="width: 100px; height:100px;" loop  autoplay></lottie-player>
+        <div class="logoTitle">
+        <h2>Jefferson</h1>
+        <h2>Guirra</h1>
         </div>
-      </article>
-
-    </div>
-
-    </main>
-
-    <div class="card-2">
-      <a
-        target="_blank"
-        href="https://br.freepik.com/fotos-vetores-gratis/avatar-homem"
-      >
-        <img
-          src="./Assets/avatar-1.png"
-          alt="avatar-homem"
-          title="avatar-homem"
-        />
-      </a>
-    </div>
-
-    <section class="sobre" id="sobre" data-anima>
-      <h1 class="title">Quem sou</h1>
-      <div class="container-sobre">
-        <a href='https://br.freepik.com/fotos-vetores-gratis/programacao'>
-          <span class="img-avatar">
-            <img src="./Assets/about-small.png" alt="avatar-developer" title="avatar-developer">
-          </span>
-        </a>
-
+      </div>
+      <div class="background">
+        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_zprb9vzj.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+      </div>
+      <div class="containerPresentation">
+        <article class="card-2">
+          <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ndj9fzcd.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+        </article>
         
-        <article class="conteudo-sobre">
-          <div>
-          <p>Olá me chamo Jefferson Guirra, sou um ex-estudante de física de 23 anos que teve contato com programação ainda no curso, desde então mergulhei nesse meio de cabeça, errando e aprendendo a cada dia busco evoluir como desenvolvedor. No momento me dedico a ser um desenvolvedor Front End mas futuramente quero me tornar Full Stack. Para me encontrar <a href="https://www.linkedin.com/in/jefferson-guirra-developer" target="_blank">LinkedIn</a>, para obter mais informações sobre os meus projetos<a href="https://github.com/Jefferson-Guirra" target="_blank"> Github.</a>
-          </p>
-        </div>
+        <article class="card-1">
+          <div class="container-card">
+            <p id="title">Transformando idéias em grandes resultados através de <span>produtos digitais</span> de alta qualidade.</p>
+            <article class="developer">
+              <span id="dev">Desenvolvedor</span>
+                <div class="rotate-words">
+                  <span style="--d: 0s">front end.</span>
+                  <span style="--d: 4s">mobile.</span>
+
+                  <span style="--d: 7s">web.</span>
+                </div>
+            </article>
+          </div>
         </article>
       </div>
+
+    </section>
+
+
+
+    <section class="sobre" id="sobre" data-anima>
+      <div class="sobreBackground">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_f24znioj.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+      </div>
+      <div class="container-sobre">
+      <h1 class="title">Quem sou</h1>
+      <article class="contentSobre">
+        
+          <article class="coverSobre">
+            <span class="me">
+              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_9rfdfjek.json" background="transparent"  speed="1"   loop  autoplay></lottie-player>
+            </span>
+          </article>
+          <article class="conteudo-sobre">
+            <p>Olá me chamo Jefferson Guirra, sou um ex-estudante de física de 23 anos que teve contato com programação ainda no curso, desde então mergulhei nesse meio de cabeça, errando e aprendendo a cada dia busco evoluir como desenvolvedor. No momento me dedico a ser um desenvolvedor Front End mas futuramente quero me tornar Full Stack. Para me encontrar <a href="https://www.linkedin.com/in/jefferson-guirra-developer" target="_blank">LinkedIn</a>, para obter mais informações sobre os meus projetos<a href="https://github.com/Jefferson-Guirra" target="_blank"> Github.</a>
+            </p>
+          </article>
+      </article>
+      </div>
       
-      <article>
+     
 
     </section>
 
 
 
   <main class="projeto" id="projetos"  data-anima>
-    <h1 class="title">Projetos</h1>
-      <div class="slider-container">
-        <div class="slider-content">
-          <div class="slide">
-            <div>
-              <img src='./Assets/movies.JPG' />
-            </div>
-            <div class="slide-info">
-              <h4>Movies Net</h4>
-              <div class="slide-description">
-                <div class="tecnologias">
-                  <span><img src="./Assets/hoverSvg/react.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/redux.svg" alt=""></span>
-                </div>
-                <a href="https://movies-net.netlify.app/" target="_blank">
-                  <span class="link">
-                    <img src="./Assets/arrow.svg" alt="">
-                  </span>
-                </a>
-              </div>
+    <div class="sobreBackground">
+      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_f24znioj.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+    </div>
+      <div class="containerProjetos">
+        <h1 class="title">Projetos</h1>
+        <div class="contentProjetos">
+          <div class="iconProjeto">
+            <div class="rocket">
+              <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mkgyhwlf.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
             </div>
           </div>
-
-          
-          <div class="slide">
-            <img src='./Assets/fundacao.JPG'/>
-            <div class="slide-info">
-              <h4>Fundação Dev</h4>
-              <div class="slide-description">
-                <div class="tecnologias">
-                  <span><img src="./Assets/hoverSvg/nextjs.svg" alt="next icon"></span>
-                  <span><img src="./Assets/hoverSvg/typescript.svg" alt=" typescript icon"></span>
-                  <span><img src="./Assets/hoverSvg/styled-components.svg" alt=" styled-components icon"></span>
-                  <span><img src="./Assets/prismic.svg" alt=" styled-components icon"></span>
-
+          <div class="boxCards">
+            <div class="cards">
+              <div class="card">
+                <div class="contentcard">
+                  <img src="./Assets/movies.JPG" alt="">
+                  <h3>Movies net</h3>
+                  <div class="actions">
+                    <div class="tecnologias">
+                      <span><img src="./Assets/hoverSvg/react.svg" alt=""></span>
+                      <span><img src="./Assets/hoverSvg/redux.svg" alt=""></span>
+                      <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
+                      <span><img src="./Assets/firebase.svg" alt=""></span>
+                    </div>
+                  </div>
                 </div>
-                <a href="https://fundacao-dev.vercel.app/"
-                target="_blank">
-                <span class="link">
-                  <img src="./Assets/arrow.svg" alt="">
-                </span>
-              </a>
+              </div>
+              <div class="card">
+                <div class="contentcard">
+                  <img src="./Assets/fundacao.JPG" alt="">
+                  <h3>Fundação Dev</h3>
+                  <div class="actions">
+                    <div class="tecnologias">
+                      <span><img src="./Assets/hoverSvg/nextjs.svg" alt=""></span>
+                      <span><img src="./Assets/hoverSvg/typescript.svg" alt=""></span>
+                      <span><img src="./Assets/hoverSvg/styled-components.svg" alt=""></span>
+                      <span><img src="./Assets/firebase.svg" alt=""></span>
+                      <span><img src="./Assets/prismic.svg" alt=""></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentcard">
+                  <img src="./Assets/board.JPG" alt="">
+                  <h3>Meu Board</h3>
+                  <div class="actions">
+                    <div class="tecnologias">
+                      <span><img src="./Assets/hoverSvg/nextjs.svg" alt=""></span>
+                      <span><img src="./Assets/hoverSvg/typescript.svg" alt=""></span>
+                      <span><img src="./Assets/hoverSvg/styled-components.svg" alt=""></span>
+                      <span><img src="./Assets/firebase.svg" alt=""></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentcard">
+                  <img src="./Assets/doctor-care.JPG" alt="">
+                  <h3>Doctor Care</h3>
+                  <div class="actions">
+                    <div class="tecnologias">
+                      <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
+                      <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
+                      <span><img src="./Assets/hoverSvg/css.svg" alt="css icon"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentcard">
+                  <img src="./Assets/animais-fantasticos.JPG" alt="">
+                  <h3>Animais Fantásticos</h3>
+                  <div class="actions">
+                    <div class="tecnologias">
+                      <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
+                      <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
+                      <span><img src="./Assets/hoverSvg/css.svg" alt="css icon"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentcard">
+                  <img src="./Assets/caravan.JPG" alt="">
+                  <h3>Caravan</h3>
+                  <div class="actions">
+                    <div class="tecnologias">
+                      <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
+                      <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
+                      <span><img src="./Assets/hoverSvg/bootstrap.svg" alt="bootstrap"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="contentcard">
+                  <img src="./Assets/lista-de-tarefas.JPG" alt="">
+                  <h3>Lista de Tarefas</h3>
+                  <div class="actions">
+                    <div class="tecnologias">
+                      <span><img src="./Assets/hoverSvg/react.svg" alt="html icon"></span>
+                      <span><img src="./Assets/hoverSvg/typescript.svg" alt="javascript icon"></span>
+                      <span><img src="./Assets/hoverSvg/styled-components.svg" alt="bootstrap"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="slide">
-            <img src='./Assets/board.JPG'/>
-            <div class="slide-info">
-              <h4>Meu Board</h4>
-              <div class="slide-description">
-                <div class="tecnologias">
-                  <span><img src="./Assets/hoverSvg/nextjs.svg" alt=""></span>
-                  <span><img src="./Assets/firebase.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/typescript.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/styled-components.svg" alt=""></span>
-
-                </div>
-                <a href="https://meu-app-board.herokuapp.com/"
-                target="_blank">
-                <span class="link">
-                  <img src="./Assets/arrow.svg" alt="">
-                </span>
-              </a>
-              </div>
+            <div class="cardNavigation">
+              <span class="spin ativo" data-value = '0'></span>
+              <span class="spin" data-value='1'></span>
+              <span class="spin" data-value='2'></span>
+              <span class="spin" data-value='3'></span>
+              <span class="spin" data-value='4'></span>
+              <span class="spin" data-value='5'></span>
+              <span class="spin" data-value='6'></span>
             </div>
           </div>
-          <div class="slide">
-            <img src='./Assets/dogs.JPG' />
-            <div class="slide-info">
-              <h4>Dogs</h4>
-              <div class="slide-description">
-                <div class="tecnologias">
-                  <span><img src="./Assets/hoverSvg/react.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/redux.svg" alt=""></span>
-                </div>
-                <a href="https://dogs-rede-social-cachorro.netlify.app/" target="_blank">
-                  <span class="link">
-                    <img src="./Assets/arrow.svg" alt="">
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src='./Assets/animais-fantasticos.JPG' />
-            <div class="slide-info">
-              <h4>Animais Fantásticos</h4>
-              <div class="slide-description">
-                <div class="tecnologias">
-                  <span><img src="./Assets/hoverSvg/html.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/javaScript.svg" alt=""></span>
-
-                </div>
-                <a href="https://jefferson-guirra.github.io/-Projetos/projeto-02"
-                target="_blank">
-                  <span class="link">
-                    <img src="./Assets/arrow.svg" alt="">
-                  </span>
-                </a>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src='./Assets/doctor-care.JPG' />
-            <div class="slide-info">
-              <h4>Doctor Care</h4>
-              <div class="slide-description">
-                <div class="tecnologias">
-                  <span><img src="./Assets/hoverSvg/html.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/javaScript.svg" alt=""></span>
-
-                </div>
-                <a href="https://doctor-care-clinica.netlify.app/" target="_blank">
-                  <span class="link">
-                    <img src="./Assets/arrow.svg" alt="">
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src='./Assets/caravan.JPG' />
-            <div class="slide-info">
-              <h4>Caravan</h4>
-              <div class="slide-description">
-                <div class="tecnologias">
-                  <span><img src="./Assets/hoverSvg/html.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/javaScript.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/bootstrap.svg" alt=""></span>
-
-                </div>
-                <a href="https://caravan-viagens-empresa.netlify.app/" target="_blank">
-                  <span class="link">
-                    <img src="./Assets/arrow.svg" alt="">
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src='./Assets/lista-de-tarefas.JPG' />
-            <div class="slide-info">
-              <h4>Lista de Tarefas</h4>
-              <div class="slide-description">
-                <div class="tecnologias">
-                  <span><img src="./Assets/hoverSvg/react.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/typescript.svg" alt=""></span>
-                  <span><img src="./Assets/hoverSvg/styled-components.svg" alt=""></span>
-
-                </div>
-                <a href="https://projeto-06-lista-de-tarefas.netlify.app/" target="_blank">
-                  <span class="link">
-                    <img src="./Assets/arrow.svg" alt="">
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="nav-slide">
-          <span><img src="./Assets/arrow2.svg" alt="" class="prev" ></span>
-          <span><img src="./Assets/arrow2.svg" alt="" class="next"></span>
         </div>
       </div>
-        <div class="foot-projetos">
-          <a href="https://github.com/Jefferson-Guirra" target="_blank">
-            <p>Repositórios do Github</p>
-          </a>
-        </div>
-    </main>
+      </div>
+  </main>
 
+    
     <section class="conhecimentos" id="conhecimentos" data-anima>
+      <div class="sobreBackground">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_f24znioj.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+      </div>
       <article class="skill-container">
-        <div class="skill-text">
-          <h2>Conhecimentos</h2>
-          <p>*passe o cursor do mouse sobre o card para ler*</p>
-          <p class="text-conhecimentos">
-            HTML é uma linguagem de marcação, usada para definir a estrutura do conteúdo que sera exibido na web.
+        <h2 class="title">Conhecimentos</h2>
+        <div class="skill-content">
+            <div class="skill-text">
+              <p>*passe o cursor do mouse sobre o card para ler*</p>
+              <p class="text-conhecimentos">
+                HTML é uma linguagem de marcação, usada para definir a estrutura do conteúdo que sera exibido na web.
+    
+                CSS é uma linguagem de folha de estilo composta por "cascatas", criado com o propósito de estilizar as páginas HTML.
+    
+                JavaScript é uma linguagem de programação interpretada e estruturada, de script de alto nível com tipagem dinâmica fraca e multiparadigma, criada para dar reatividade as páginas.',
+    
+                Bootstrap é um framework desenvolvido para pontencializar o bom e velho Css.
+                ReactJS é uma biblioteca JavaScript de código aberto usada para a criação de interfaces de usuário em páginas web.
+    
+                Redux é uma biblioteca para armazenamento de estados de aplicações JavaScript.
+    
+                TypeScript é um superSet da linguagem JavaScript de tipagem estática, quando usado potencializa a detecção de erros durante o desenvolvimento e habilita diferentes funcionalidades não nativas.
+    
+                Styled Components é uma biblioteca que utiliza o conceito de Css-in-JS, ou seja, que nos permite escrever códigos CSS dentro do JavaScript'
+              </p>
+            </div>
+    
+            <div class="skillCardContent">
+    
+              <div class="skill-card">
+                <div class="conteudo-skill">
+                  <span>
+                  </span>
+              </div>
 
-            CSS é uma linguagem de folha de estilo composta por "cascatas", criado com o propósito de estilizar as páginas HTML.
-        
-            JavaScript é uma linguagem de programação interpretada e estruturada, de script de alto nível com tipagem dinâmica fraca e multiparadigma, criada para dar reatividade as páginas.',
-            
-            Bootstrap é um framework desenvolvido para pontencializar o bom e velho Css.
-            ReactJS é uma biblioteca JavaScript de código aberto usada para a criação de interfaces de usuário em páginas web.
-            
-            Redux é uma biblioteca para armazenamento de estados de aplicações JavaScript.
-
-            TypeScript é um superSet da linguagem JavaScript de tipagem estática, quando usado potencializa a detecção de erros durante o desenvolvimento e habilita diferentes funcionalidades não nativas.
-
-            Styled Components é uma biblioteca que utiliza o conceito de Css-in-JS, ou seja, que nos permite escrever códigos CSS dentro do JavaScript'
-          </p>
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+    
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+                <div class="conteudo-skill">
+                  <span></span>
+                </div>
+              </div>
+    
+              <div class="cardSkillsNavigation">
+                <span class="spinCard ativo" data-value = '0'></span>
+                <span class="spinCard" data-value='1'></span>
+                <span class="spinCard" data-value='2'></span>
+                <span class="spinCard" data-value='3'></span>
+              </div>
+    
+            </div>
         </div>
-        <div class="skill-card">
-
-          <div class="conteudo-skill">
-            <span>
-            </span>
-          </div>
-          
-          
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-          
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-          <div class="conteudo-skill">
-            <span></span>
-          </div>
-        </div>
-
       </article>
-
-      
-
     </section>
 
+    <section class="contact" id="contact" data-anima>
+      <div class="sobreBackground">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_f24znioj.json" background="transparent"  speed="1" loop  autoplay></lottie-player>
+      </div>
+      <article class="contentContact">
+        <h1 class="title">Contato</h1>
+          <div class="contactActions">
+            <form  action="https://formsubmit.co/jeffersonguirra8@gmail.com" method="POST" >
+              <input type="hidden" name="_next" value="http://127.0.0.1:5501/sucess.html">
+              <input type="hidden" name="_autoresponse" value="Recebi sua mensagem, logo retornarei.">
+              <label for="username">Nome:</label>
+              <input type="text" name="username" id="username" placeholder="nome...">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="email...">
+              <label for="subject">Assunto:</label>
 
+              <input type="text" name="subject" id="subject" placeholder="assunto...">
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" placeholder="mensagem..." ></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+            <div class="socialContact">
+              <div class="coverContact">
+                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_8yy47r3l.json" background="transparent"  speed="1"   loop  autoplay></lottie-player>
+              </div>
+              <div class="social-midia">
+                <a href="https://github.com/Jefferson-Guirra" target="_blank"><img src="./Assets/github.svg"></a>
+                <a href="https://www.linkedin.com/in/jefferson-guirra-developer" target="_blank"> <img src="./Assets/lkd.svg"></a>
+                <a href="https://www.instagram.com/jefferson.guirra/" target="_blank"><img src="./Assets/insta.svg"></a>
+                <a href="https://wa.me/5574988728305" target="_blank"><img src="./Assets/whatsapp.svg"></a>
+                <a href="./assets/Jefferson Guirra de Freitas Silva.pdf" download="curriculum jefferson" target="_blank"><img src="./Assets/curriculum.svg"></a>
+              </div>
+            </div>
+          </div>
+
+      </article>
+    </section>
 
     <footer class="footer">
       

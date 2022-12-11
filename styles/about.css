@@ -3,90 +3,77 @@
   background-color: var(--four-color);
   height: 100vh;
   overflow: hidden;
-  padding-block: 5rem;
   position: relative;
+}
+.sobre .sobreBackground{
+  position: absolute;
+  z-index: 1;
 }
 
 .container-sobre{
-  max-width: 1120px;
-  margin: 0 auto;
-  display: grid;
   position: relative;
-  grid-template-columns: auto auto;
-  padding: 1rem;
-  gap: 1rem;
   height: 100%;
-  overflow: hidden;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-  height: 70%;
-}
-
-.js .container-sobre .img-avatar{
-  position: relative;
-  display: block;
-  width: 25rem;
-  overflow: hidden;
-  height: 100% ;
-  padding-inline: 1.2rem;
-  opacity: 0;
-  transition:  1s ease 1s;
-
-}
-
-.container-sobre .img-avatar{
-  position: relative;
-  display: block;
-  width: 25rem;
-  overflow: hidden;
-  height: 100% ;
-  padding-inline: 1.2rem;
-  opacity: initial;
-  transition: all 3s ease ;
-}
-
-
-.js .sobre.active .container-sobre .img-avatar{
-  opacity: initial;
-}
-
-
-.js .container-sobre .img-avatar::before{
-  content: '';
-  display: inline-block;
-  width: 60px;
-  height: 50px;
-  top: 92px;
-  right:56px;
-  position: absolute;
-  animation: anima-Background 15s forwards infinite linear;
-}
-
-
-.sobre .title{
-  max-width: 1120px;
+  z-index: 2;
   margin: 0 auto;
-  grid-column: 1/-1;
-  text-align: center;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  overflow: hidden;
+}
+.contentSobre{
+  display:flex;
+  flex: 1;
 }
 
-.js .sobre .title{
+
+.sobre .container-sobre .title{
+  text-align: left;
+  margin-bottom: 0rem;
+}
+
+.js .sobre .container-sobre .title{
   opacity: 0;
   transform:  translate3d(0,-50px,0);
   transition: 1.5s ease;
 }
 
-.js .sobre.active .title{
+.js .sobre.active .container-sobre .title{
   transform: initial;
   opacity: initial;
   visibility: visible;
-  
+}
+
+.sobre .container-sobre .coverSobre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.coverSobre .me{
+  display: block;
+  max-width: 400px;
+}
+
+.js .sobre .container-sobre .coverSobre{
+  opacity: 0;
+  transform: translate3d(0,-70px,0);
+  transition: 2s;
+  transition-delay: 1s;
+}
+
+.js .sobre.active .container-sobre .coverSobre{
+  opacity: initial;
+  transform: initial;
+}
+
+.container-sobre .conteudo-sobre{
+  display: flex;
+  align-items: center;
 }
 .js .container-sobre .conteudo-sobre {
   transform: translate3d(0,-70px,0);
   font-size: 1.3rem;
+  width: 55%;
   opacity: 0;
   transition: all 2s ease;
   transition-delay: .5s;
@@ -99,6 +86,7 @@
 .conteudo-sobre p{
     font-size: 1.2rem;
     line-height: 150%;
+    font-weight: bold;
     width: 100%;
   }
 .container-sobre .conteudo-sobre p a{
@@ -114,40 +102,52 @@
 
 /*----------------------------RESPONSIVIDADE------------------------------*/
 
-@media (max-width:40rem){
-    .conteudo-sobre p{
-    font-size: 1.2rem;
-    line-height: 150%;
-    width: 100%;
-    text-align: center;
+@media (max-width:1300px){
+  .sobre .sobreBackground{
+    width: 1800px;
   }
 }
-@media (max-width:1000px){
-  .sobre .title{
-    text-align: center;
-    width: 100%;
+
+@media (max-width:900px){
+  .container-sobre{
+    padding: 2rem;
   }
-  .sobre{
-    height: fit-content;
+  .sobre .container-sobre .coverSobre{
+    margin-top: 0.8rem;
   }
-  .container-sobre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+}
+
+@media(max-width:750px){
+  .container-sobre{
+    padding: 1rem;
+  }
+  .sobre .container-sobre .title{
+    font-size: 2rem;
+  }
+  .contentSobre{
     flex-direction: column;
   }
-  .container-sobre  .img-avatar{
-    padding: 0;
-    width: 30rem;
-    height: 15rem;
+  .sobre .container-sobre .coverSobre{
+    width: 100%;
+    height: 40%;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    transition-delay: .5s;
   }
-  .container-sobre .img-avatar::before{
-    width: 35px;
-    right: 10.3rem;
-    top: 3rem;
+  .coverSobre .me{
+    max-width: 350px;
+  }
+  .js  .container-sobre .contentSobre .conteudo-sobre{
+    transition-delay: 1.5s !important;
+    height: 60%;
+    width: 100%;
+  }
+  .conteudo-sobre p{
+    text-align: center;
+    font-size: 1rem;
   }
 }
-
-
 
 

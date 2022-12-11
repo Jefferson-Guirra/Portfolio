@@ -1,189 +1,222 @@
 .projeto{
   position: relative;
   color: white;
-  background-color: var(--three-color);
+  height: 100vh;
   overflow: hidden;
-  padding-block: 5rem;
+  background-image: linear-gradient(to right bottom, #7b19c6db, #000000,rgb(1, 0, 10));
+  overflow: hidden;
+  
+}
+
+.projeto .sobreBackground{
+  position: absolute;
+  z-index: 1;
+}
+.projeto .containerProjetos{
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .projeto .title{
-  max-width: 1120px;
-  margin: 0 auto;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 0rem;
   text-align: left;
 }
 
 .js .projeto .title{
-  position: relative;
+  width: 100%;
   transform: translate3d(0,-70px,0);
   opacity: 0;
   transition: 1.5s ease;
 }
 .js .projeto.active .title{
-  opacity: initial;
-  transform: initial;
-}
-
-
-.slider-container{
-  overflow: hidden;
-  max-width: 850px;
-  margin: 2rem auto;
-  transform: translate3d(0,-70px,0);
-  opacity: 0;
-  transition: all 1.5s ease;
-  transition-delay: .5s;
-}
-.projeto.active .slider-container{
-  opacity: initial;
-  transform: initial;
-} 
-.slider-content{
   width: 100%;
-  transition: transform 1.5s ease, opacity .1s ease;
+  opacity: initial;
+  transform: initial;
+}
+.projeto .contentProjetos{
+  overflow: hidden;
   display: flex;
+  width: 100%;
+  flex: 1;
   flex-direction: row;
+  justify-content: space-between;  
 }
 
-.slide{
+.iconProjeto{
+  order: 1;
+  width: 50%;
+  transform: rotate(-90deg);
+ 
+}
+
+.js  .iconProjeto .rocket{
+  transform: translate3d(-250px,300px,0);
+  opacity: 0;
+  transition: transform 5s ease, opacity 1s ease;
+}
+.js .projeto.active .rocket{
+  opacity: initial;
+  transform: initial;
+}
+
+
+.boxCards{
+  display: flex;
+  flex-direction: column;
+  transition: 1.5s ease;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+}
+
+.cards{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  transition: 1.5s ease;
+}
+
+
+.card{
+  background-image: linear-gradient(to right, #41295a, #2f0743);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   flex-shrink: 0;
+  overflow: hidden;
   width: 80%;
   margin-inline: 10%;
-  border-radius:10px;
-  overflow: hidden;
-}
-
-.slider-content .slide:nth-child(1){
-  background-color: #121212;
-}
-.slider-content .slide:nth-child(2){
-   background-color:#15171b;
-}
-.slider-content .slide:nth-child(3){
-    background-color: #141a29;
-
-}
-
-.slider-content .slide:nth-child(4){
-  background-color: #fb1;
-}
-.slider-content .slide:nth-child(5){
-  background-color: #FB5;
-}
-.slider-content .slide:nth-child(6){
-  background-color: #00856f;
-}
-.slider-content .slide:nth-child(7){
-  background-color: #212429;
-}
-.slider-container .slide:last-child {
-  background-color: #17181F;
-
-}
-
-.slide-info{
-  padding: 1rem;
-}
-
-.slide-info h4{
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-.slide-description{
+  border-radius: 20px;
   display: flex;
-  justify-content: space-between;
-}
-.tecnologias{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.tecnologias span{
-  display: flex;
-  width: 35px;
-  height: 35px;
+  flex-direction: column;
 }
 
-.tecnologias span:hover{
-  animation: show-pop 1s infinite linear;
+.card .contentcard img{
+  flex-shrink: 0;
 }
-
-.slide-description .link{
+.card .contentcard h3{
+  padding-inline: 1rem;
+}
+.card .contentcard .actions{
+  padding-inline: 1rem;
+}
+.card .tecnologias {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.card .tecnologias span{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  border:3px solid   #FFF;
-  transform: rotate(90deg);
-  padding: .5rem;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 34px;
 }
 
-
-.nav-slide{
+.cardNavigation{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
   width: 50%;
-  margin: 0 auto;
+
 }
-.nav-slide span{
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: .5rem;
-  width: 51px;
-  height: 51px;
+.cardNavigation .spin{
+position: relative;
+display: block;
+cursor: pointer;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+
 }
 
-.next{
-  transform: rotate(-180deg);
-}
-
-.foot-projetos{
-  text-align: center;
-}
-
-.foot-projetos a p{
-  position: relative;
-  display: inline;
-  opacity: 0.8;
-  border:none;
-  transition: all 1s ease;
-}
-
-.foot-projetos a p::after{
+.cardNavigation .spin::after{
   content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translate3d(-50%,0,0);
   display: block;
-  width: 0%;
-  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
   background-color: #eee;
-  transition: 1.3s;
+  transition: 1.5s;
+
+}
+.boxCards .cardNavigation .spin.ativo::after{
+  width: 11px;
+  height: 11px;
 }
 
-.foot-projetos a:hover p::after{
-  width: 120%;
-  opacity: initial;
-}
+@media (max-width:1300px){
+  .projeto .sobreBackground{
+    width: 1800px;
+  }
+  .projeto .containerProjetos{
+    padding: 2rem;
+  }
 
-@media (max-width:720px){
-  .projeto .title{
-    padding-inline: 1rem;
+}
+@media (max-width:1100px){
+.boxCards{
+  width: 70%;
+}
+  .iconProjeto{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .iconProjeto .rocket{
+    max-width: 300px;
   }
 }
 
+@media (max-width:640px){
+  .projeto .containerProjetos{
+    padding: 1rem;
+  }
+  .projeto .title{
+    font-size: 2rem;
+  }
+  .projeto .contentProjetos{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxCards{
+    height: fit-content;
+    width: 100%;
+  }
+  .card{
+    width: 70%;
+    margin-inline: 15%;
+  }
+  .card .contentcard h3{
+    font-size: 1.2rem;
+  }
 
+  .iconProjeto{
+    position: absolute;
+    z-index: 30;
+    top: 70%;
+    width: 40%;
+  }
 
+}
 
-
-
-
-
-
+@media (max-width:500px){
+  .card{
+    width: 90%;
+    margin-inline: 5%;
+  }
+}
 
 
 

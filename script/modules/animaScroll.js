@@ -12,7 +12,7 @@ export default function animaScroll(elements) {
   function calcTop(){
     
     sections.forEach(section=>{
-      const dist = section.offsetTop - (window.innerHeight * 0.6)
+      const dist = section.offsetTop - (window.innerHeight * 0.5)
       if(window.scrollY > dist){
         section.classList.add('active')
       }

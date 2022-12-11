@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700;900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 
 
 /*----------------------GERAL------------------------------*/
@@ -12,12 +14,19 @@
   margin: 0px;
 }
 :root{
-  --first-color:#0096d6;
-  --second-color:#257aa7;
-  --three-color:#2d3139;
-  --four-color:#283033;
-  --font-first:'Open Sans', sans-serif;
+  --font-first:'Sairia', sans-serif;
 
+}
+.teste{
+  position: relative;
+  height: 100vh;
+}
+.lottie-anim {
+z-index: -1; 
+position: absolute; 
+width: 100%;
+height: 100%;
+pointer-events: none;
 }
 
 html{
@@ -40,11 +49,11 @@ ul{
 }
 body{
   position: relative;
-  padding-top: 5rem;
   font-family: var(--font-first);
   font-size: 1.2rem;
   color: white;
-  background-color: var(--three-color);
+  padding-left: 73px;
+  background-image: linear-gradient(to right bottom, #200726, #2f1038, #3f174b, #501f5f, #9711bc);
 }
 
 a{
