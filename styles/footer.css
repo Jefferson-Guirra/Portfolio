@@ -1,6 +1,6 @@
 .footer{
   background-color: #07030D;
-  padding-inline: 1rem;  
+ 
 }
 
 .foot-Container{
@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   border-top: 2px solid #eee;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 0rem;
 }
 
 .foot-Container div{
