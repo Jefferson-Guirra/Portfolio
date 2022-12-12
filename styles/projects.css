@@ -56,7 +56,7 @@
 }
 
 .js  .iconProjeto .rocket{
-  transform: translate3d(-250px,300px,0);
+  transform: translate3d(-300px,300px,0);
   opacity: 0;
   transition: transform 5s ease, opacity 1s ease;
 }
