@@ -4,7 +4,7 @@ export default function listSkill (){
 
     1:'CSS é uma linguagem de folha de estilo composta por "cascatas", criado com o propósito de estilizar as páginas HTML.',
 
-    2:'JavaScript é uma linguagem de programação interpretada e estruturada, de script de alto nível com tipagem dinâmica fraca e multiparadigma, criada para dar reatividade as páginas.',
+    2:'JavaScript é uma linguagem de programação interpretada e estruturada, de script de alto nível com tipagem dinâmica fraca e multiparadigma.',
     
     3:'Bootstrap é um framework desenvolvido para pontencializar o bom e velho Css.',
    
