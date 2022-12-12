@@ -59,8 +59,7 @@
 .skill-text p{
   width: 40rem;
   line-height: 150%;
-  transition: all 1.5s ease;
-  transition-delay: .5s;
+  transition: all 1.5s ease .5s;
 }
 
 .js .skill-text p{
@@ -269,6 +268,14 @@
   width: 100%;
   margin-top: 2rem;
 }
+  .js .conhecimentos .cardSkillsNavigation{
+    opacity: 0;
+    transition: 1.5s 1s;
+    
+  }
+  .js .conhecimentos.active .cardSkillsNavigation{
+    opacity: initial;
+  }
 
 .cardSkillsNavigation .spinCard{
 position: relative;
@@ -339,7 +346,7 @@ border-radius: 50%;
   .conteudo-skill{
     height: 12rem;
   }
-
+  
   .cardSkillsNavigation{
     margin-top: 1rem;
   }

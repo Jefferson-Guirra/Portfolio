@@ -69,14 +69,19 @@
 .boxCards{
   display: flex;
   flex-direction: column;
-  transition: 1.5s ease;
+  transition: 1.5s ease .5s;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   width: 50%;
   position: relative;
 }
-
+.js .boxCards{
+  opacity: 0;
+}
+.js .projeto.active .boxCards{
+  opacity: initial;
+}
 .cards{
   display: flex;
   width: 100%;
