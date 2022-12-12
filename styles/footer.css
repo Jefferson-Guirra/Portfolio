@@ -1,7 +1,6 @@
 .footer{
-  padding-inline: 1rem;
-  background-color: var(--four-color);
-  
+  background-color: #07030D;
+  padding-inline: 1rem;  
 }
 
 .foot-Container{
@@ -9,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 2px solid rgba(255, 255, 255, 0.518);
+  border-top: 2px solid #eee;
   padding: 2.5rem 1rem;
 }
 
