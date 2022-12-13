@@ -312,7 +312,7 @@ border-radius: 50%;
   width: 1800px;
   }
   .skill-container .skill-text p{
-    height: 10rem;
+    height: fit-content;
     width: fit-content;
   }
 }
@@ -362,14 +362,16 @@ border-radius: 50%;
   .skill-container{
     padding: 1rem;
   }
-  
+  .skill-container .title{
+    font-size: 2rem;
+  }
  .conteudo-skill{
   width: 32%;
   height: 9rem;
   margin-inline: 0.66%;
  }
  .skill-container .skill-text{
-  height: 10rem;
+  height: 50%;
   width: 100%;
  }
   .skill-container{
@@ -384,15 +386,6 @@ border-radius: 50%;
   width: 100%;
 
 }
-  .skill-container .title{
-    margin-bottom: 0rem;
-    font-size: 3rem;
-  }
   
  }
 
- @media (max-width:500px){
-  .skill-container .title{
-    font-size: 2rem;
-  }
- }
