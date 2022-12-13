@@ -57,8 +57,7 @@
 .js .sobre .container-sobre .coverSobre{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 2s;
-  transition-delay: 1s;
+  transition: 1.5s 1s;
 }
 
 .js .sobre.active .container-sobre .coverSobre{
@@ -75,7 +74,7 @@
   font-size: 1.3rem;
   width: 55%;
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 1.5s ease;
   transition-delay: .5s;
 }
 
