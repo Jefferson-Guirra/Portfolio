@@ -50,6 +50,7 @@
   width: 100%;
   align-items: center;
   display: flex;
+  gap: 5rem;
 }
 
 .skill-text{
@@ -58,13 +59,12 @@
   margin-top: 5rem;
 }
 .skill-text p{
-  width: 40rem;
   line-height: 150%;
   transition: all 1.5s ease .5s;
 }
 
 .js .skill-text p{
-  max-width: 30rem;
+  
   transform: translate3d(0,-70px,0);
   opacity: 0;
 }
@@ -311,10 +311,6 @@ border-radius: 50%;
   .conhecimentos .sobreBackground{
   width: 1800px;
   }
-  .skill-container .skill-text p{
-    height: fit-content;
-    width: fit-content;
-  }
 }
 @media (max-width:1200px){
   .conhecimentos{
@@ -330,10 +326,7 @@ border-radius: 50%;
     gap: 2rem;
   }
   .skill-container .skill-text{
-    align-self: center;
     width: 50%;
-    margin-top: 0px;
-    
   }
   .skill-container .skill-text h2{
     width: 100%;
@@ -371,20 +364,21 @@ border-radius: 50%;
   margin-inline: 0.66%;
  }
  .skill-container .skill-text{
-  height: 50%;
+  height: 30%;
   width: 100%;
+  margin-top: 0rem;
  }
   .skill-container{
     padding: 1rem;
   }
   .skill-content{
-    gap: 0rem;
     flex-direction: column;
     justify-content: center;
   }
+
 .skillCardContent{
   width: 100%;
-
+  gap: 0rem;
 }
   
  }

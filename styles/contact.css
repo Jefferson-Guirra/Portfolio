@@ -48,11 +48,14 @@ margin-bottom: .3rem;
   border:none;
   padding: 1rem;
   margin-bottom: 2rem;
-  border-radius: 4px;
+  border-radius: 15px;
+
   height: 30px;
   font-size: 1.1rem;
 }
 .contentContact form textarea{
+border-radius: 15px;
+
   padding: 1rem;
   width: 70%;
 }
