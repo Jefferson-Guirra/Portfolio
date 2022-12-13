@@ -37,14 +37,14 @@ ul{
   list-style: none;
 }
 ::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0.088);
+  background-color: #07030D;
 }
 ::-webkit-scrollbar {
   width: 10px;
 
 }
 ::-webkit-scrollbar-thumb {
-  background: #808080;
+  background: rgba(238, 238, 238, 0.574);
   border-radius: 4px;
 }
 body{

@@ -1,4 +1,6 @@
+import debounce from '../helper/debounce.js'
 export default function activeIcon() {
+  const debounceOnScroll = debounce(onScroll,150)
   function onScroll() {
     activateMenuAtCurrentSection('presetation')
     activateMenuAtCurrentSection('sobre')
@@ -50,5 +52,5 @@ export default function activeIcon() {
   window.onload=()=>{
     onScroll()
   }
-  window.addEventListener('scroll',onScroll)
+  window.addEventListener('scroll',debounceOnScroll)
 }
