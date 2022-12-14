@@ -5,6 +5,8 @@ import slider from './modules/slider.js'
 import activeIcon from "./modules/activeIconScrollMenu.js";
 
 const swiper = new Swiper('.mySwiper', {
+  loop:'true',
+  effect: 'flip',
   pagination: {
     el: '.swiper-pagination',
     clickable: true
