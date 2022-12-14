@@ -4,7 +4,12 @@ import animaScroll from './modules/animaScroll.js'
 import slider from './modules/slider.js'
 import activeIcon from "./modules/activeIconScrollMenu.js";
 
-
+const swiper = new Swiper('.mySwiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+})
 
 const scrollAnima = animaScroll('[data-anima]')
 scrollAnima()
@@ -12,7 +17,6 @@ const skillList =listSkill()
 const cardSkill = new Card('.conteudo-skill','.skill-text p',skillList)
 cardSkill.init()
 activeIcon()
-slider('.cards','.spin')
 slider('.skill-card', '.spinCard')
 
 

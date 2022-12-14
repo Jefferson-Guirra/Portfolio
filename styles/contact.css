@@ -18,7 +18,7 @@
 .contentContact .title{
   transform: translate3d(0,-70px,0);
   opacity: 0;
-  transition: 1.5s ease;
+  transition: 1s;
 }
 .contact.active .title{
   opacity: initial;
@@ -32,7 +32,7 @@
   width: 60%;
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1.5s ease;
+  transition: 1s ease;
   transition-delay: 0.5s;
 }
 .contact.active .contactActions form{
@@ -85,8 +85,7 @@ width: 70%;
   align-items: center;
   width: 40%;
   opacity: 0;
-  transition: opacity .7s ease, transform 5s ease;
-  transition-delay: 0.7s;
+  transition: opacity 1s 1s, transform 5s;
   transform: translate3d(0,-300px,0);
 
 }

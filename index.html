@@ -12,6 +12,10 @@
       document.documentElement.className ='js'
     </script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav id="navBar">
@@ -117,171 +121,179 @@
               <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mkgyhwlf.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
             </div>
           </div>
-          <div class="boxCards">
-            <div class="cards">
-              <div class="card">
-                <div class="contentcard">
-                  <img src="./Assets/movies.JPG" alt="">
-                  <div class="cardText">
-                    <h3>Movies net</h3>
-                    <div class="actions">
-                      <div class="tecnologias">
-                        <span><img src="./Assets/hoverSvg/react.svg" alt=""></span>
-                        <span><img src="./Assets/hoverSvg/redux.svg" alt=""></span>
-                        <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
-                        <span><img src="./Assets/firebase.svg" alt=""></span>
+          <div class="container-swiper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="contentcard">
+                        <img src="./Assets/movies.JPG" alt="">
+                        <div class="cardText">
+                          <h3>Movies net</h3>
+                          <div class="actions">
+                            <div class="tecnologias">
+                              <span><img src="./Assets/hoverSvg/react.svg" alt=""></span>
+                              <span><img src="./Assets/hoverSvg/redux.svg" alt=""></span>
+                              <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
+                              <span><img src="./Assets/firebase.svg" alt=""></span>
+                            </div>
+                            <a href="https://movies-net.netlify.app/" target="_blank">
+                              <img src="./Assets/link.svg" alt="movies net">
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <a href="https://movies-net.netlify.app/" target="_blank">
-                        <img src="./Assets/link.svg" alt="movies net">
-                      </a>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="contentcard">
-                  <img src="./Assets/fundacao.JPG" alt="Fundação Dev">
-                  <div class="cardText">
-                    <h3>Fundação Dev</h3>
-                    <div class="actions">
-                      <div class="tecnologias">
-                        <span><img src="./Assets/hoverSvg/nextjs.svg" alt=""></span>
-                        <span><img src="./Assets/hoverSvg/typescript.svg" alt=""></span>
-                        <span><img src="./Assets/hoverSvg/styled-components.svg" alt=""></span>
-                        <span><img src="./Assets/firebase.svg" alt=""></span>
-                        <span><img src="./Assets/prismic.svg" alt=""></span>
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="contentcard">
+                        <img src="./Assets/fundacao.JPG" alt="Fundação Dev">
+                        <div class="cardText">
+                          <h3>Fundação Dev</h3>
+                          <div class="actions">
+                            <div class="tecnologias">
+                              <span><img src="./Assets/hoverSvg/nextjs.svg" alt=""></span>
+                              <span><img src="./Assets/hoverSvg/typescript.svg" alt=""></span>
+                              <span><img src="./Assets/hoverSvg/styled-components.svg" alt=""></span>
+                              <span><img src="./Assets/firebase.svg" alt=""></span>
+                              <span><img src="./Assets/prismic.svg" alt=""></span>
+                            </div>
+                            <a href="https://fundacao-dev.vercel.app/" target="_blank">
+                              <img src="./Assets/link.svg" alt="Link Fundação dev">
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <a href="https://fundacao-dev.vercel.app/" target="_blank">
-                        <img src="./Assets/link.svg" alt="Link Fundação dev">
-                      </a>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="contentcard">
-                  <img src="./Assets/board.JPG" alt="Meu Board">
-                  <div class="cardText">
-                    <h3>Meu Board</h3>
-                    <div class="actions">
-                      <div class="tecnologias">
-                        <span><img src="./Assets/hoverSvg/nextjs.svg" alt=""></span>
-                        <span><img src="./Assets/hoverSvg/typescript.svg" alt=""></span>
-                        <span><img src="./Assets/hoverSvg/styled-components.svg" alt=""></span>
-                        <span><img src="./Assets/firebase.svg" alt=""></span>
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="contentcard">
+                        <img src="./Assets/board.JPG" alt="Meu Board">
+                        <div class="cardText">
+                          <h3>Meu Board</h3>
+                          <div class="actions">
+                            <div class="tecnologias">
+                              <span><img src="./Assets/hoverSvg/nextjs.svg" alt=""></span>
+                              <span><img src="./Assets/hoverSvg/typescript.svg" alt=""></span>
+                              <span><img src="./Assets/hoverSvg/styled-components.svg" alt=""></span>
+                              <span><img src="./Assets/firebase.svg" alt=""></span>
+                            </div>
+                            <a href="https://meu-board-three.vercel.app/" target="_blank">
+                              <img src="./Assets/link.svg" alt="Lnk Meu Board">
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <a href="https://meu-board-three.vercel.app/" target="_blank">
-                        <img src="./Assets/link.svg" alt="Lnk Meu Board">
-                      </a>
+                    </div>           
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="contentcard">
+                        <img src="./Assets/dogs.JPG" alt="Fundação Dev">
+                        <div class="cardText">
+                          <h3>Dogs</h3>
+                          <div class="actions">
+                            <div class="tecnologias">
+                              <span><img src="./Assets/hoverSvg/react.svg" alt=""></span>
+                              <span><img src="./Assets/hoverSvg/redux.svg" alt=""></span>
+                              <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
+                            </div>
+                            <a href="https://dogs-rede-social-cachorro.netlify.app/" target="_blank">
+                              <img src="./Assets/link.svg" alt="Link Fundação dev">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>            
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="contentcard">
+                        <img src="./Assets/doctor-care.JPG" alt="Doctor Care">
+                        <div class="cardText">
+                          <h3>Doctor Care</h3>
+                          <div class="actions">
+                            <div class="tecnologias">
+                              <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
+                              <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
+                              <span><img src="./Assets/hoverSvg/css.svg" alt="css icon"></span>
+                            </div>
+                            <a href="https://doctor-care-clinica.netlify.app/" target="_blank">
+                              <img src="./Assets/link.svg" alt="link Doctor Care">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>           
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="contentcard">
+                        <img src="./Assets/animais-fantasticos.JPG" alt="Animais Fantásticos">
+                        <div class="cardText">
+                          <h3>Animais Fantásticos</h3>
+                          <div class="actions">
+                            <div class="tecnologias">
+                              <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
+                              <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
+                              <span><img src="./Assets/hoverSvg/css.svg" alt="css icon"></span>
+                            </div>
+                            <a href="https://jefferson-guirra.github.io/-Projetos/projeto-02/" target="_blank">
+                              <img src="./Assets/link.svg" alt="link Animais Fantásticos">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>            
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="contentcard">
+                        <img src="./Assets/caravan.JPG" alt="Caravan">
+                        <div class="cardText">
+                          <h3>Caravan</h3>
+                          <div class="actions">
+                            <div class="tecnologias">
+                              <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
+                              <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
+                              <span><img src="./Assets/hoverSvg/bootstrap.svg" alt="bootstrap"></span>
+                            </div>
+                            <a href="https://caravan-viagens-empresa.netlify.app/" target="_blank">
+                              <img src="./Assets/link.svg" alt="link Caravan">
+                            </a>
+                        </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="contentcard">
-                  <img src="./Assets/dogs.JPG" alt="Fundação Dev">
-                  <div class="cardText">
-                    <h3>Dogs</h3>
-                    <div class="actions">
-                      <div class="tecnologias">
-                        <span><img src="./Assets/hoverSvg/react.svg" alt=""></span>
-                        <span><img src="./Assets/hoverSvg/redux.svg" alt=""></span>
-                        <span><img src="./Assets/hoverSvg/css.svg" alt=""></span>
+                <div class="swiper-slide">
+                    <div class="card">
+                      <div class="contentcard">
+                        <img src="./Assets/lista-de-tarefas.JPG" alt="">
+                        <div class="cardText">
+                          <h3>Lista de Tarefas</h3>
+                          <div class="actions">
+                            <div class="tecnologias">
+                              <span><img src="./Assets/hoverSvg/react.svg" alt="html icon"></span>
+                              <span><img src="./Assets/hoverSvg/typescript.svg" alt="javascript icon"></span>
+                              <span><img src="./Assets/hoverSvg/styled-components.svg" alt="bootstrap"></span>
+                            </div>
+                            <a href="https://projeto-06-lista-de-tarefas.netlify.app/" target="_blank">
+                              <img src="./Assets/link.svg" alt="link lista de Tarefas">
+                            </a>
+                        </div>
+                        </div>
                       </div>
-                      <a href="https://dogs-rede-social-cachorro.netlify.app/" target="_blank">
-                        <img src="./Assets/link.svg" alt="Link Fundação dev">
-                      </a>
                     </div>
-                  </div>
                 </div>
-              </div>
-
-              <div class="card">
-                <div class="contentcard">
-                  <img src="./Assets/doctor-care.JPG" alt="Doctor Care">
-                  <div class="cardText">
-                    <h3>Doctor Care</h3>
-                    <div class="actions">
-                      <div class="tecnologias">
-                        <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
-                        <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
-                        <span><img src="./Assets/hoverSvg/css.svg" alt="css icon"></span>
-                      </div>
-                      <a href="https://doctor-care-clinica.netlify.app/" target="_blank">
-                        <img src="./Assets/link.svg" alt="link Doctor Care">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="contentcard">
-                  <img src="./Assets/animais-fantasticos.JPG" alt="Animais Fantásticos">
-                  <div class="cardText">
-                    <h3>Animais Fantásticos</h3>
-                    <div class="actions">
-                      <div class="tecnologias">
-                        <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
-                        <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
-                        <span><img src="./Assets/hoverSvg/css.svg" alt="css icon"></span>
-                      </div>
-                      <a href="https://jefferson-guirra.github.io/-Projetos/projeto-02/" target="_blank">
-                        <img src="./Assets/link.svg" alt="link Animais Fantásticos">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="contentcard">
-                  <img src="./Assets/caravan.JPG" alt="Caravan">
-                  <div class="cardText">
-                    <h3>Caravan</h3>
-                    <div class="actions">
-                      <div class="tecnologias">
-                        <span><img src="./Assets/hoverSvg/html.svg" alt="html icon"></span>
-                        <span><img src="./Assets/hoverSvg/javaScript.svg" alt="javascript icon"></span>
-                        <span><img src="./Assets/hoverSvg/bootstrap.svg" alt="bootstrap"></span>
-                      </div>
-                      <a href="https://caravan-viagens-empresa.netlify.app/" target="_blank">
-                        <img src="./Assets/link.svg" alt="link Caravan">
-                      </a>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="contentcard">
-                  <img src="./Assets/lista-de-tarefas.JPG" alt="">
-                  <div class="cardText">
-                    <h3>Lista de Tarefas</h3>
-                    <div class="actions">
-                      <div class="tecnologias">
-                        <span><img src="./Assets/hoverSvg/react.svg" alt="html icon"></span>
-                        <span><img src="./Assets/hoverSvg/typescript.svg" alt="javascript icon"></span>
-                        <span><img src="./Assets/hoverSvg/styled-components.svg" alt="bootstrap"></span>
-                      </div>
-                      <a href="https://projeto-06-lista-de-tarefas.netlify.app/" target="_blank">
-                        <img src="./Assets/link.svg" alt="link lista de Tarefas">
-                      </a>
-                  </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="cardNavigation">
-              <span class="spin ativo" data-value = '0'></span>
-              <span class="spin" data-value='1'></span>
-              <span class="spin" data-value='2'></span>
-              <span class="spin" data-value='3'></span>
-              <span class="spin" data-value='4'></span>
-              <span class="spin" data-value='5'></span>
-              <span class="spin" data-value='6'></span>
-              <span class="spin" data-value='7'></span>
-            </div>
+        <div class="swiper-pagination"></div>
+      </div>
           </div>
         </div>
-    </article>
+      </article>
   </section>
 
     
@@ -398,7 +410,7 @@
 
       </article>
     </section>
-
+    
     <footer class="footer">
       
       <div class="foot-Container">
@@ -412,7 +424,7 @@
       </div>
       
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="/script/script.js"></script>
   </body>
 </html>

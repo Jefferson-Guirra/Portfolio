@@ -34,7 +34,7 @@
 .js .sobre .container-sobre .title{
   opacity: 0;
   transform:  translate3d(0,-50px,0);
-  transition: 1.5s ease;
+  transition: 1s;
 }
 
 .js .sobre.active .container-sobre .title{
@@ -57,7 +57,7 @@
 .js .sobre .container-sobre .coverSobre{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1.5s 1s;
+  transition: 1s .5s;
 }
 
 .js .sobre.active .container-sobre .coverSobre{
@@ -74,8 +74,8 @@
   font-size: 1.3rem;
   width: 55%;
   opacity: 0;
-  transition: all 1.5s ease;
-  transition-delay: .5s;
+  transition: 1s;
+  transition-delay: 1s;
 }
 
 .js .sobre.active .conteudo-sobre {
@@ -139,7 +139,7 @@
     max-width: 350px;
   }
   .js  .container-sobre .contentSobre .conteudo-sobre{
-    transition-delay: 1.5s !important;
+    transition-delay: 1s !important;
     height: 60%;
     width: 100%;
   }
