@@ -113,7 +113,7 @@ img{
         align-items: center;
       }
       .swiper-pagination-bullet-active{
-        background-color: #eee;
+        background: #eee !important;
         transform:scale(1.2);
       }
       .swiper-slide img {
