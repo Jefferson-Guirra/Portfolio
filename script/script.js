@@ -36,7 +36,7 @@ const skillsSwiper = new Swiper('.skillSwiper', {
 const scrollAnima = animaScroll('[data-anima]')
 scrollAnima()
 const skillList =listSkill()
-const cardSkill = new Card('.skillCard','.skill-text p',skillList)
+const cardSkill = new Card('.skill-card','.skill-text p',skillList)
 cardSkill.init()
 activeIcon()
 

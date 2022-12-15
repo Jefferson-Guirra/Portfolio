@@ -313,6 +313,9 @@
   width: 100%;
   margin-top: 0rem;
  }
+ .skill-text p{
+  width: 100%;
+ }
   .skill-container{
     padding: 1rem;
   }
@@ -351,6 +354,9 @@
     .skill-card img{
       width: 100px;
       height: 100px;
+    }
+    .skill-text p{
+      font-size: 1.05rem;
     }
   }
 
