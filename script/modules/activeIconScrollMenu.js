@@ -3,9 +3,9 @@ export default function activeIcon() {
   const debounceOnScroll = debounce(onScroll,150)
   function onScroll() {
     activateMenuAtCurrentSection('presetation')
-    activateMenuAtCurrentSection('sobre')
-    activateMenuAtCurrentSection('projetos')
-    activateMenuAtCurrentSection('conhecimentos')
+    activateMenuAtCurrentSection('about')
+    activateMenuAtCurrentSection('project')
+    activateMenuAtCurrentSection('skills')
     activateMenuAtCurrentSection('contact')
   }
   function activateMenuAtCurrentSection(id) {

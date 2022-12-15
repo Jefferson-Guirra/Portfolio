@@ -1,16 +1,13 @@
 /*------------------------------------SOBRE-STYLE-GERAL------------------*/
-.sobre{
+.about{
   background-color: var(--four-color);
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
-.sobre .sobreBackground{
-  position: absolute;
-  z-index: 1;
-}
 
-.container-sobre{
+
+.container-about{
   position: relative;
   height: 100%;
   z-index: 2;
@@ -20,56 +17,56 @@
   padding: 5rem;
   overflow: hidden;
 }
-.contentSobre{
+.content-about{
   display:flex;
   flex: 1;
 }
 
 
-.sobre .container-sobre .title{
+.about .container-about .title{
   text-align: left;
   margin-bottom: 0rem;
 }
 
-.js .sobre .container-sobre .title{
+.js .about .container-about .title{
   opacity: 0;
   transform:  translate3d(0,-50px,0);
   transition: 1s;
 }
 
-.js .sobre.active .container-sobre .title{
+.js .about.active .container-about .title{
   transform: initial;
   opacity: initial;
   visibility: visible;
 }
 
-.sobre .container-sobre .coverSobre{
+.about .container-about .cover-about{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
 }
-.coverSobre .me{
+.cover-about .me{
   display: block;
   max-width: 400px;
 }
 
-.js .sobre .container-sobre .coverSobre{
+.js .about .container-about .cover-about{
   opacity: 0;
   transform: translate3d(0,-70px,0);
   transition: 1s .5s;
 }
 
-.js .sobre.active .container-sobre .coverSobre{
+.js .about.active .container-about .cover-about{
   opacity: initial;
   transform: initial;
 }
 
-.container-sobre .conteudo-sobre{
+.container-about .text-about{
   display: flex;
   align-items: center;
 }
-.js .container-sobre .conteudo-sobre {
+.js .container-about .text-about {
   transform: translate3d(0,-70px,0);
   font-size: 1.3rem;
   width: 55%;
@@ -78,22 +75,22 @@
   transition-delay: 1s;
 }
 
-.js .sobre.active .conteudo-sobre {
+.js .about.active .text-about {
   opacity: initial;
   transform: initial;
 }
-.conteudo-sobre p{
+.text-about p{
     font-size: 1.2rem;
     line-height: 150%;
     font-weight: bold;
     width: 100%;
   }
-.container-sobre .conteudo-sobre p a{
+.container-about .text-about p a{
   color: #9711bc;
   transition: .5s;
 }
 
-.container-sobre .conteudo-sobre p a:hover{
+.container-about .text-about p a:hover{
   color: #FFF;
   opacity: 1;
 }
@@ -101,33 +98,27 @@
 
 /*----------------------------RESPONSIVIDADE------------------------------*/
 
-@media (max-width:1300px){
-  .sobre .sobreBackground{
-    width: 1800px;
-  }
-}
-
 @media (max-width:900px){
-  .container-sobre{
+  .container-about{
     padding: 2rem;
   }
-  .sobre .container-sobre .coverSobre{
+  .about .container-about .cover-about{
     margin-top: 0.8rem;
   }
 
 }
 
 @media(max-width:750px){
-  .container-sobre{
+  .container-about{
     padding: 1rem;
   }
-  .sobre .container-sobre .title{
+  .about .container-about .title{
     font-size: 2rem;
   }
-  .contentSobre{
+  .content-about{
     flex-direction: column;
   }
-  .sobre .container-sobre .coverSobre{
+  .about .container-about .cover-about{
     width: 100%;
     height: 40%;
     margin-top: 0px;
@@ -135,15 +126,15 @@
     justify-content: center;
     transition-delay: .5s;
   }
-  .coverSobre .me{
+  .cover-about .me{
     max-width: 350px;
   }
-  .js  .container-sobre .contentSobre .conteudo-sobre{
+  .js  .container-about .content-about .text-about{
     transition-delay: 1s !important;
     height: 60%;
     width: 100%;
   }
-  .conteudo-sobre p{
+  .text-about p{
     text-align: center;
     font-size: 1rem;
   }

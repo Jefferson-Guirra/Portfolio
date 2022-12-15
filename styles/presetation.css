@@ -4,11 +4,8 @@ position: relative;
 overflow: hidden;
 background-image: linear-gradient(to right bottom, #200726, #2f1038, #3f174b, #501f5f, #9711bc);
 }
-.presentation .background{
-  position: absolute;
-  z-index: 1;
 
-}
+
 .presentation .logo {
   z-index: 2;
   position: absolute;
@@ -77,11 +74,6 @@ background-image: linear-gradient(to right bottom, #200726, #2f1038, #3f174b, #5
 
 
 /*------------------------------RESPONSIVIDADE--------------------------*/
-@media (max-width:1300px){
-  .presentation .background{
-    width: 1800px;
-  }
-}
 @media (max-width:950px){
   .containerPresentation{
     padding: 2rem;

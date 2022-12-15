@@ -55,6 +55,10 @@ body{
   padding-left: 73px;
   background-image: linear-gradient(to right bottom, #200726, #2f1038, #3f174b, #501f5f, #9711bc);
 }
+.Background{
+  position: absolute;
+  z-index: 1;
+}
 
 a{
   text-decoration: none;
@@ -94,76 +98,52 @@ img{
         height: 100%;
       }
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
-      .swiper-pagination-bullet-active{
-        background: #eee !important;
-        transform:scale(1.2);
-      }
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .swiper-pagination{
-          position: absolute;
-          top: 95%;
-          
-          
-        }
+.swiper-pagination-bullet-active{
+  background: #eee !important;
+  transform:scale(1.2);
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination{
+    position: absolute;
+    top: 95%;
+    
+    
+  }
 
-
+  @media (max-width:1300px){
+    .Background{
+      width: 1800px;
+    }
+  }
 
 /*----------------------ANIMAÇÕES------------------------------*/
 
 
-@keyframes anima-size{
-  from{
-    opacity: 0;
-    width: 0px;
-  }
-  to{
-    opacity: initial;
-    width: 105px;
-  }
-}
-@keyframes anima-Skill{
-  from{
-    opacity: 0;
-    width: 0px;
-  }
-  to{
-    opacity: initial;
-    width: 150px;
-  }
-}
 
-@keyframes show-rotate{
-  from{
-    transform: initial;
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
 
 @keyframes rotate-Words {
   5%{
@@ -184,40 +164,6 @@ img{
   }
 }
 
-
-@keyframes show-Avatar{
-  10%{
-    top: 34vh;
-  }
-
-  20%{
-    top: 33vh;
-  }
-  30%{
-    top:31vh;
-  }
-  40%{
-    top: 30vh;
-  }
-  50%{
-    top: 30vh;
-  }
-  60%{
-    top: 31vh;
-  }
-  70%{
-    top: 32vh;
-  }
-  80%{
-    top: 33vh;
-  }
-  90%{
-    top: 34vh;
-  }
-  100%{
-    top: 35vh;
-  }
-}
 @keyframes show-pop{
   0%{
     transform: scale(1,1);
@@ -229,50 +175,7 @@ img{
     transform: scale(1,1);
   }
 }
-@keyframes show-AvatarMob{
-  10%{
-    top: 31vh;
-  }
 
-  20%{
-    top: 30vh;
-  }
-  30%{
-    top: 29vh;
-  }
-  40%{
-    top: 28vh;
-  }
-  50%{
-    top: 27vh;
-  }
-  60%{
-    top: 28vh;
-  }
-  70%{
-    top: 29vh;
-  }
-  80%{
-    top: 30vh;
-  }
-  90%{
-    top: 31vh;
-  }
-  100%{
-    top: 32vh;
-  }
-}
-
-@keyframes navbar{
-  from{
-    transform: translate3d(100px,0,0);
-    opacity: 0;
-  }
-  to{
-    transform: initial;
-    opacity:initial
-  }
-}
 
 @keyframes anima-Left{
   to{
@@ -295,43 +198,6 @@ img{
   }
 }
 
-@keyframes anima-title{
-  to{
-    opacity: initial;
-    transform: initial;
-  }
-}
 
 
-@keyframes skill-Card {
 
-  to{
-    opacity: initial;
-    transform: initial;
-    visibility: visible;
-  }
-}
-
-
-@keyframes anima-Background{
-  0%{
-    background: url('../Assets/java.svg') center center no-repeat;
-  }
-
-  20%{
-    background: url('../Assets/php.svg') center center no-repeat;
-  }
-
-  40%{
-    background: url('../Assets/hoverSvg/html.svg') center center no-repeat;
-  }
-  60%{
-    background: url('../Assets/hoverSvg/bootstrap.svg') center center no-repeat;
-  }
-  80%{
-    background: url('../Assets/hoverSvg/javaScript.svg') center center no-repeat;
-  }
-  100%{
-    background: url('../Assets/react.svg') center center no-repeat;
-  }
-}

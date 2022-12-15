@@ -1,18 +1,13 @@
-.projeto{
+.project{
   position: relative;
   color: white;
   height:100vh;
   overflow: hidden;
   background-image: linear-gradient(to right bottom, #7b19c6db, #000000,rgb(1, 0, 10));
   overflow: hidden;
-  
 }
 
-.projeto .sobreBackground{
-  position: absolute;
-  z-index: 1;
-}
-.projeto .containerProjetos{
+.project .container-project{
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -21,25 +16,25 @@
   flex-direction: column;
   height: 100%;
 }
-.projeto .title{
+.project .title{
   width: 100%;
   height: fit-content;
   margin-bottom: 0rem;
   text-align: left;
 }
 
-.js .projeto .title{
+.js .project .title{
   width: 100%;
   transform: translate3d(0,-70px,0);
   opacity: 0;
   transition: 1s;
 }
-.js .projeto.active .title{
+.js .project.active .title{
   width: 100%;
   opacity: initial;
   transform: initial;
 }
-.projeto .contentProjetos{
+.project .content-project{
   overflow: hidden;
   display: flex;
   width: 100%;
@@ -49,19 +44,19 @@
   justify-content: space-between;  
 }
 
-.iconProjeto{
+.icon-project{
   order: 1;
   width: 50%;
   transform: rotate(-90deg);
  
 }
 
-.js  .iconProjeto .rocket{
+.js  .icon-project .rocket{
   transform: translate3d(-300px,300px,0);
   opacity: 0;
   transition: transform 5s, opacity 1s;
 }
-.js .projeto.active .rocket{
+.js .project.active .rocket{
   opacity: initial;
   transform: initial;
 }
@@ -71,7 +66,7 @@
   transition: 1s;
   transition-delay:.5s;
 }
-.js .projeto.active   .container-swiper{
+.js .project.active   .container-swiper{
   opacity: initial;
 }
 .cards{
@@ -146,10 +141,7 @@
 
 
 @media (max-width:1300px){
-  .projeto .sobreBackground{
-    width: 1800px;
-  }
-  .projeto .containerProjetos{
+  .project .container-project{
     padding: 2rem;
   }
 
@@ -159,13 +151,13 @@
     width: 70%;
   }
 
-  .iconProjeto{
+  .icon-project{
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .iconProjeto .rocket{
+  .icon-project .rocket{
     max-width: 300px;
   }
   .card .tecnologias{
@@ -181,7 +173,7 @@
     width: 30px;
     height: 30px;
   }
-  .swiper-pagination{
+  #project-navigation{
     position: absolute;
     top: 80% !important;
   }
@@ -189,13 +181,13 @@
 }
 
 @media (max-width:890px){
-  .projeto .containerProjetos{
+  .project .container-project{
     padding: 1rem;
   }
-  .projeto .title{
+  .project .title{
     font-size: 2rem;
   }
-  .projeto .contentProjetos{
+  .project .content-project{
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -206,7 +198,7 @@
     height: fit-content;
     width: 100%;
   }
-  .swiper-pagination{
+  #project-navigation{
   position: absolute;
   top: 2% !important;
   left:40% !important;
@@ -239,7 +231,7 @@
     height: 35px;
   }
 
-  .iconProjeto{
+  .icon-project{
     position: absolute;
     top: 70%;
     width: 40%;
@@ -259,14 +251,13 @@
     width: 25px ;
     height: 25px;
   }
-  .swiper-pagination{
-     
-      position: absolute;
-      top: 2% !important;
-      left:49% !important;
-      height: fit-content !important;
-      margin: auto 0;
-      transform: rotate(90deg) !important;
+  #project-navigation{
+    position: absolute;
+    top: 2% !important;
+    left:49% !important;
+    height: fit-content !important;
+    margin: auto 0;
+    transform: rotate(90deg) !important;
       
     }
 }

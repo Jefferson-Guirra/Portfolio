@@ -18,7 +18,7 @@ a{
 
 }
 
-.containerSucess{
+.container-sucess{
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -26,7 +26,7 @@ a{
   z-index: 2;
 }
 
-.contentSucess{
+.content-sucess{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,25 +37,25 @@ a{
   flex-direction: column;
 }
 
-.coverSucess{
+.cover-sucess{
   margin-top: -100px;
   width: 80%;
 }
 
-.actionsSucess{
+.actions-sucess{
   position: absolute;
   top: 80%;
 }
 
 
 @media (max-width:1300px){
-  .backgroundSucess{
+  .background-sucess{
     width: 1800px;
   }
 }
 
 @media (max-width:820px){
-  .contentSucess{
+  .content-sucess{
     width: 90%;
   }
 }
