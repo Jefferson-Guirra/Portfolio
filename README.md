@@ -10,10 +10,12 @@
 
 O site é composto por quatro seções:
 
-- **Home:** Nele temos uma breve apresentação;
-- **Quem sou:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
-- **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para as perspectivas páginas web;
-- **Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens como o foco no front-end;
+- **Home:** Breve aprensentação;
+- **Quem sou:** Um pouco de informação sobre mim;
+- **Projetos:** Apresenta alguns projetos desenvolvidos, com link direto para as respectivas páginas web;
+- **Conhecimentos:** Aqui é apresentado meus conhecimentos em algumas linguagens e ferramentas da programação;
+- **Contato:** Informações a respeito de minhas redes sociais e um formulário para envio de mensagens;
+
 
 ---
 
