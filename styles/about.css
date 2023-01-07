@@ -31,7 +31,7 @@
 .js .about .container-about .title{
   opacity: 0;
   transform:  translate3d(0,-50px,0);
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .js .about.active .container-about .title{
@@ -54,7 +54,7 @@
 .js .about .container-about .cover-about{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s .5s;
+  transition: 1.5s ease .5s;
 }
 
 .js .about.active .container-about .cover-about{
@@ -71,7 +71,7 @@
   font-size: 1.3rem;
   width: 55%;
   opacity: 0;
-  transition: 1s;
+  transition: 1.5s;
   transition-delay: 1s;
 }
 

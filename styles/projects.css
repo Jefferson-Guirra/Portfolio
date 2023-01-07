@@ -27,7 +27,7 @@
   width: 100%;
   transform: translate3d(0,-70px,0);
   opacity: 0;
-  transition: 1s;
+  transition: 1.5s;
 }
 .js .project.active .title{
   width: 100%;
@@ -63,7 +63,7 @@
 
 .js   .container-swiper{
   opacity: 0;
-  transition: 1s;
+  transition: 1.5s;
   transition-delay:.5s;
 }
 .js .project.active   .container-swiper{

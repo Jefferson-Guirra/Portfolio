@@ -56,7 +56,7 @@
 }
 .skill-text p{
   line-height: 150%;
-  transition: all 1.5s ease .5s;
+  transition: all 1.5s ease .8s;
 }
 
 .js .skill-text p{
@@ -125,7 +125,7 @@
 #html{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s;
+  transition: 1.5s;
 }
 .skills.active #html{
   transform: initial;
@@ -135,7 +135,7 @@
 #css{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s .5s;
+  transition: 1s ease .5s;
 }
 
 .skills.active #css{
