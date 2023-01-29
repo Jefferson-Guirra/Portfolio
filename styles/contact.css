@@ -43,16 +43,14 @@ margin-bottom: .3rem;
 .contentContact form input{
   width: 70%;
   border:none;
-  padding: 1rem;
+  padding: 1.2rem;
   margin-bottom: 2rem;
-  border-radius: 15px;
-
+  border-radius: 20px;
   height: 30px;
   font-size: 1.1rem;
 }
 .contentContact form textarea{
-border-radius: 15px;
-
+  border-radius: 20px;
   padding: 1rem;
   width: 70%;
 }
@@ -69,12 +67,18 @@ border-radius: 15px;
 .contentContact .contactActions form button{
 display: block;
 cursor: pointer;
-padding: 0.7rem;
-font-weight: bold;
-border-radius: 15px;
+padding: 0.8rem 5rem;
+font-size: 1rem;
+border-radius: 20px;
 border: transparent;
-width: 150px;
-width: 70%;
+width: fit-content;
+font-family: var(--font-first);
+margin: 0 calc(35% - 100.37px);
+transition: 1s;
+}
+.contentContact .contactActions form button:hover{
+  background-color: #07030D;
+  color: #fff;
 }
 .contentContact .contactActions .socialContact {
   display: flex;
@@ -127,7 +131,7 @@ width: 70%;
   }
 }
 
-@media (max-width:800px){
+@media (max-width:970px){
   .contentContact{
     padding: 1rem;
     position: relative;
@@ -168,7 +172,6 @@ width: 70%;
   .contentContact .contactActions .socialContact .coverContact{
     max-width: 280px;
   }
- 
   .contactActions form input{
     width: 100%;
     margin-bottom: 1rem;
@@ -190,7 +193,7 @@ width: 70%;
     transition-delay: .7s;
   }
  
-  .contactActions form button{
+  .contentContact .contactActions form button{
     margin: 0 auto;
   }
   .contentContact .contactActions .socialContact{
