@@ -164,10 +164,20 @@
   opacity: initial;
 }
 
-#react{
+#nodejs{
   opacity: 0;
   transform: translate3d(0,-70px,0);
   transition: 1s 2s;
+}
+.skills.active #nodejs{
+  transform: initial;
+  opacity: initial;
+}
+
+#react{
+  opacity: 0;
+  transform: translate3d(0,-70px,0);
+  transition: 1s 2.5s;
 }
 .skills.active #react{
   transform: initial;
@@ -177,7 +187,7 @@
 #next{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s 2.5s;
+  transition: 1s 3s;
 }
 .skills.active #next{
   transform: initial;
@@ -187,7 +197,7 @@
 #redux{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s 3s;
+  transition: 1s 3.5s;
 }
 .skills.active #redux{
   transform: initial;
@@ -197,7 +207,7 @@
 #firebase{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s 3.5s;
+  transition: 1s 4s;
 }
 .skills.active #firebase{
   transform: initial;
@@ -206,7 +216,7 @@
 #prismic{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s 4s;
+  transition: 1s 4.5s;
 }
 .skills.active #prismic{
   transform: initial;
@@ -216,7 +226,7 @@
 #bootstrap{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s 4.5s;
+  transition: 1s 5s;
 }
 .skills.active #bootstrap{
   transform: initial;
@@ -226,7 +236,7 @@
 #styledComponents{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s 5s;
+  transition: 1s 5.5s;
 }
 .skills.active #styledComponents{
   transform: initial;
@@ -236,7 +246,7 @@
 #jest{
   opacity: 0;
   transform: translate3d(0,-70px,0);
-  transition: 1s 5.5s;
+  transition: 1s 6s;
 }
 .skills.active #jest{
   transform: initial;
