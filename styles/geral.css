@@ -94,14 +94,14 @@ img{
   width: 50%;
 }
 .swiper {
-        width: 100%;
-        height: 100%;
-      }
+  width: 100%;
+  height: 100%;
+}
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
+  height: fit-content;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,7 +116,6 @@ img{
   -webkit-align-items: center;
   align-items: center;
 }
-
 .swiper-pagination-bullet-active{
   background: #eee !important;
   transform:scale(1.2);
