@@ -72,7 +72,21 @@ background-image: linear-gradient(to right bottom, #200726, #2f1038, #3f174b, #5
   animation: rotate-Words 12s var(--d) linear infinite;
 }
 
+.container-card .networking{
+  justify-content: center;
+  padding-top: 60px;
+  gap: 1.5rem;
+  display: flex;
+}
+.container-card .networking a{
+  display: block;
+  width: 32px;
+}
+.container-card .networking a:hover{
+  cursor: pointer;
+  animation: show-pop 1s infinite linear;
 
+}
 /*------------------------------RESPONSIVIDADE--------------------------*/
 @media (max-width:950px){
   .containerPresentation{
