@@ -63,8 +63,8 @@
 }
 
 .container-about .text-about{
-  display: flex;
-  align-items: center;
+  margin-block:auto;
+  height: fit-content;
 }
 .js .container-about .text-about {
   transform: translate3d(0,-70px,0);
@@ -79,24 +79,243 @@
   opacity: initial;
   transform: initial;
 }
-.text-about p{
+.text-about #about-me{
+    display: block !important;
     font-size: 1.2rem;
     line-height: 150%;
     font-weight: bold;
+    text-align: justify;
     width: 100%;
   }
-.container-about .text-about p a{
+.container-about .text-about #about-me a{
   color: #9711bc;
   transition: .5s;
 }
 
-.container-about .text-about p a:hover{
+.container-about .text-about #about-me a:hover{
   color: #FFF;
   opacity: 1;
 }
 
+.container-about .text-about .info-about{
+  margin-top: 8rem;
+  justify-content: center;
+  display: flex;
+}
+.container-about .text-about .info-about p{
+  font-size: 1.2rem;
+}
+.container-about .text-about .number{
+  font-weight: 900;
+  font-size: 4rem !important;
+}
+.container-about .text-about .info-about .item-info{
+  position: relative;
+}
+
+.container-about .text-about .info-about #experience{
+  transform: translate3d(0px, -70px, 0px);
+  opacity: 0;
+  border-right-color: transparent ;
+  transition: 1.5s 1.5s;
+}
+
+.container-about .text-about .info-about #commit{
+  transform: translate3d(0px, 70px, 0px);
+  opacity: 0;
+  border-right-color: transparent ;
+  transition: 1.5s 2.2s;
+}
+
+.container-about .text-about .info-about #projects{
+  transform: translate3d(0px, -70px, 0px);
+  opacity: 0;
+  border-right-color: transparent ;
+  transition: 1.5s 3.2s;
+}
+
+.about.active .container-about .text-about .info-about #experience{
+  transform: initial;
+  opacity: initial;
+}
+
+.about.active .container-about .text-about .info-about #commit{
+  transform: initial;
+  opacity: initial;
+}
+
+.about.active .container-about .text-about .info-about #projects{
+  transform: initial;
+  opacity: initial;
+}
+
+.container-about .text-about .info-about .item-info .content-info{
+  text-align: center;
+  padding: 2rem;
+}
+.container-about .text-about .info-about .item-info .header-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.container-about .text-about .info-about .item-info .header-info P{
+  opacity: initial;
+}
+.container-about .text-about .info-about .item-info .header-info span{
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.container-about .text-about .info-about .item-info .header-info span::before{
+  content: '';
+  display: block;
+  background-color: #07030D;
+  width: 40px;
+  height: 7px;
+}
+.container-about .text-about .info-about .item-info .header-info span::after{
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #07030D;
+  width: 40px;
+  height: 7px;
+  transform: rotate(90deg);
+}
+.container-about .text-about .info-about .item-info .cover{
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 2px dashed #eeeeee9c ;
+  position: absolute;
+  z-index: -1;
+}
+.container-about .text-about .info-about .item-info #cover-experience{
+  border-bottom-color: transparent ;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0px;
+}
+.container-about .text-about .info-about .item-info .cover span{
+  display: block;
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  z-index: 2;
+}
+.container-about .text-about .info-about .item-info .cover .saturn,
+.container-about .text-about .info-about .item-info .cover .earth{
+  top: 100%;
+  transform: translate3d(-50%,-50%,0);
+
+}
+.container-about .text-about .info-about .item-info .cover .jupiter,
+.container-about .text-about .info-about .item-info .cover .mercury{
+  top: 0;
+  left: -0px;
+  transform: translate3d(-50%,-50%,0);
+}
+.container-about .text-about .info-about .item-info .cover .mars,
+.container-about .text-about .info-about .item-info .cover .sun{
+  left: 100%;
+  transform: translate3d(-50%,-50%,0);
+}
+
+.container-about .text-about .info-about .item-info #cover-commit{
+  border-top-color: transparent ;
+  border-left: transparent;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+}
+.container-about .text-about .info-about .item-info #cover-commit .venus{
+  top: 100%;
+  left: 100%;
+  transform: translate3d(-50%,-50%,0);
+}
+.container-about .text-about .info-about .item-info #cover-projects{
+  display: flex;
+  border-bottom-color: transparent ;
+  border-right: transparent;
+  border-left: transparent;
+}
+
+.about .container-about .text-about .info-about .item-info .cover .saturn{
+  opacity: 0;
+  transition: 1.5s 4s;
+}
+.about.active .container-about .text-about .info-about .item-info .cover .saturn{
+  opacity: initial;
+}
+
+.about .container-about .text-about .info-about .item-info .cover .jupiter{
+  opacity: 0;
+  transition: 1.5s 5s;
+}
+.about.active .container-about .text-about .info-about .item-info .cover .jupiter{
+  opacity: initial;
+}
+
+.about .container-about .text-about .info-about .item-info .cover .mars{
+  opacity: 0;
+  transition: 1.5s 5.5s;
+}
+.about.active .container-about .text-about .info-about .item-info .cover .mars{
+  opacity: initial;
+}
+
+.container-about .text-about .info-about .item-info .cover .earth{
+  opacity: 0;
+  transition: 1.5s 6s;
+}
+.about.active .container-about .text-about .info-about .item-info .cover .earth{
+  opacity: initial;
+}
+
+.container-about .text-about .info-about .item-info .cover .venus{
+  opacity: 0;
+  transition: 1.5s 6.5s;
+}
+.about.active .container-about .text-about .info-about .item-info .cover .venus{
+  opacity: initial;
+}
+
+.container-about .text-about .info-about .item-info .cover .mercury{
+  opacity: 0;
+  transition: 1.5s 7s;
+}
+
+.about.active .container-about .text-about .info-about .item-info .cover .mercury{
+  opacity: initial;
+}
+
+.container-about .text-about .info-about .item-info .cover .sun{
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  transition: 1.5s 7.5s;
+}
+.about.active .container-about .text-about .info-about .item-info .cover .sun{
+  opacity: initial;
+}
+.container-about .text-about .info-about .item-info P{
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+
 
 /*----------------------------RESPONSIVIDADE------------------------------*/
+
+@media (max-width:1550px){
+  .about .container-about .text-about .info-about{
+   display: none;
+  }
+}
 
 @media (max-width:900px){
   .container-about{
@@ -105,6 +324,7 @@
   .about .container-about .cover-about{
     margin-top: 0.8rem;
   }
+
 
 }
 
@@ -121,7 +341,7 @@
   .about .container-about .cover-about{
     width: 100%;
     height: 40%;
-    margin-top: 0px;
+    margin-top: 25px;
     align-items: center;
     justify-content: center;
     transition-delay: .5s;
@@ -131,13 +351,11 @@
   }
   .js  .container-about .content-about .text-about{
     transition-delay: 1s !important;
-    height: 60%;
     width: 100%;
   }
-  .text-about p{
-    text-align: center;
+  .text-about #about-me{
+    text-align: justify;
+    line-height: 150%;
     font-size: 1rem;
   }
 }
-
-
