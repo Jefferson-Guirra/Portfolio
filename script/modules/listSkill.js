@@ -1,4 +1,4 @@
-export default function listSkill (){
+export function listSkill (){
   const listInfo = {
     0: 'HTML é uma linguagem de marcação, usada para definir a estrutura do conteúdo que sera exibido na web.',
 

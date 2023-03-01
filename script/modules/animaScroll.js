@@ -1,5 +1,5 @@
 import debounce from "../helper/debounce.js"
-export default function animaScroll(elements) {
+export function animaScroll(elements) {
   const sections =document.querySelectorAll(elements)
   const calcTopDebounce = debounce(calcTop,100)
   

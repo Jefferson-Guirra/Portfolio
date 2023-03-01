@@ -1,8 +1,4 @@
-import Card from "./modules/skills.js";
-import listSkill from './modules/listSkill.js'
-import animaScroll from './modules/animaScroll.js'
-import activeIcon from "./modules/activeIconScrollMenu.js";
-import createSwiperSlider from "./modules/createSwiperSlider.js";
+import {Card, listSkill, animaScroll, activeIcon, createSwiperSlider} from './modules/protocols.js'
 
 createSwiperSlider()
 const scrollAnima = animaScroll('[data-anima]')

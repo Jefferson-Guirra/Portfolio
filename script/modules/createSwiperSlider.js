@@ -34,11 +34,9 @@ const optionsSlider =  () => {
     optionsSlider.push(optionsSlider2)
     return optionsSlider
 }
-const createSwiperSlider = () => {
+export const createSwiperSlider = () => {
     const options =  optionsSlider()
     options.forEach(item =>new Swiper(item.name,item))
 }
 
-
-export default createSwiperSlider
   

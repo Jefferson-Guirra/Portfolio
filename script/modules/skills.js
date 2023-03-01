@@ -1,4 +1,4 @@
-export default class Card{
+export class Card{
   constructor(list,elemetText,info){
     this.cardList = document.querySelectorAll(list)
     this.text = document.querySelector(elemetText)
