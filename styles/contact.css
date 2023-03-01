@@ -110,16 +110,10 @@ transition: 1s;
 .contentContact .contactActions .socialContact .social-midia a{
   position: relative;
   display: block;
-  width: 25px;
-  height: 25px;
 }
 
 .contentContact .contactActions .socialContact .social-midia a:hover{
   animation: show-pop 1s infinite linear;
-}
-.contentContact .contactActions .socialContact a{
-  width: 34px;
-  height: 34px;
 }
 
 

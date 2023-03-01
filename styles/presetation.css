@@ -80,7 +80,6 @@ background-image: linear-gradient(to right bottom, #200726, #2f1038, #3f174b, #5
 }
 .container-card .networking a{
   display: block;
-  width: 32px;
 }
 .container-card .networking a:hover{
   cursor: pointer;
